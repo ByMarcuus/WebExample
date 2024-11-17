@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ca">
-<head>
+  <head>
     <meta charset="UTF-8">
     <link rel="STYLESHEET" type="text/css" href="IsmaelMarcos.css">
     <link rel="STYLESHEET" type="text/css" href="IsmaelMarcosTipus.css">
@@ -8,493 +8,416 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tipus - A6</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <div id="divtransicioncolor"></div>
-    
     <div id="divtransicion"></div>
-
     <header id="Header">
-
-        <nav id="Barra">
-            
-            <ul id="Lista">
-
-                <li class="Paginas">
-                    <a href="IsmaelMarcos.html" target="_self">Home</a>
-                    <input type="image" alt="Mostrar Apartats de Home" src="Images/Header/Flecha.png" id="Home" class="Button" onclick="MostrarApartadoHome();">
-                </li>
-
-                <li class="Paginas">
-                    <a href="IsmaelMarcosAspectes.html">Aspectes Básics</a>
-                    <input type="image" alt="Mostrar Apartats de Aspectes Básics" src="Images/Header/Flecha.png" class="Button" onclick="MostrarApartado2();">
-                </li>
-
-                <li class="Paginas">
-                    <a href="IsmaelMarcosTipus.html">Tipus i zones</a>
-                    <input type="image" alt="Mostrar Apartats de Tipus, zones i altres" src="Images/Header/Flecha.png" class="Button" onclick="MostrarTipos();">
-                </li>
-
-                <li class="Paginas">
-                    <a href="IsmaelMarcosEnquesta.html">Enquesta</a>
-                    <input type="image" alt="Mostrar Apartats de Enquesta" src="Images/Header/Flecha.png" class="Button" onclick="MostrarEnquesta();">
-                </li>
-                
-            </ul>
-
-                <ul id="ApartadoHome" class="Apartados">
-                    <li>
-                        <input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarPaginas();">
-                    </li>
-                    <li><a href="IsmaelMarcos.html">IA - Introducció</a></li>
-                    <li><a href="IsmaelMarcos.html">Història de la IA</a></li>
-                    <li><a href="IsmaelMarcos.html">Llocs d'Interés</a></li>
-                </ul>
-
-                <ul id="Apartado2" class="Apartados">
-                    <li><input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarPaginas();"></li>
-
-                    <li>
-                        <a href="IsmaelMarcosAspectes.html">Què és?</a>
-                        <input type="image" alt="Mostrar Subapartats de Què és?" src="Images/Header/Flecha.png" class="Button" onclick="MostrarSubApartado21()">
-                    </li>
-
-                    <li>
-                        <a href="IsmaelMarcosAspectes.html">Quina importància té?</a>
-                        <input type="image" alt="Mostrar Subapartats de Quina importància té?" src="Images/Header/Flecha.png" class="Button" onclick="MostrarSubApartado22()">
-                    </li>
-
-                </ul>
-
-                    <ul id="SubApartado21" class="Apartados">
-                        <li><input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarApartado2();"></li>
-
-                        <li>
-                            <a href="IsmaelMarcosAspectes.html">Què és la IA?</a>
-                        </li>
-                    </ul>
-
-                    <ul id="SubApartado22" class="Apartados">
-                        <li><input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarApartado2();"></li>
-
-                        <li>
-                            <a href="IsmaelMarcosAspectes.html">Proposta de regulació de la UE</a>
-                        </li>
-                    </ul>
-
-                <ul id="ApartadoTipos" class="Apartados">
-                    <li><input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarPaginas();"></li>
-
-                    <li>
-                        <a id="TiposIA">Tipus de IA</a>
-                    </li>
-
-                    <li>
-                        <a id="SectoresIA">Sectors en els que s'aplica</a>
-                    </li>
-
-                </ul>
-
-                <ul id="ApartadoEnquesta" class="Apartados">
-                    <li><input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarPaginas();"></li>
-                    <li><a href="IsmaelMarcosEnquesta.html">Satisfacció del client</a></li>
-                </ul>
-
-            <input type="image" alt="Iniciar sessió" src="Images/Header/Login.png" id="Session" onclick="MostrarInicioSesion();">
-
-        </nav>
-
-        <div>
-            <form action="mailto:ismael.marcos@iescasablancas.cat" method="post" enctype="text/plain" id="Inicio">
-
-                <img src="Images/Header/Cerrar.png" id="Cerrar" alt="Tancar" onclick="OcultarInicioSesion();">
-
-                <div>
-
-                    <label for="camp">Usuari: </label>
-                    <input name="Usuari" id="camp" type="text" size="15" maxlength="25" />
-
-                </div>
-
-                <div>
-
-                    <label for="pass">Contrasenya: </label>
-                    <input name="Contrasenya" type="password" id="pass" size="15" maxlength="20" />
-
-                </div>
-
-                <input type="submit" value="Iniciar sessió"/>
-            </form>
+      <nav id="Barra">
+        <ul id="Lista">
+          <li class="Paginas">
+            <a href="IsmaelMarcos.html" target="_self">Home</a>
+            <input type="image" alt="Mostrar Apartats de Home" src="Images/Header/Flecha.png" id="Home" class="Button" onclick="MostrarApartadoHome();">
+          </li>
+          <li class="Paginas">
+            <a href="IsmaelMarcosAspectes.html">Aspectes Básics</a>
+            <input type="image" alt="Mostrar Apartats de Aspectes Básics" src="Images/Header/Flecha.png" class="Button" onclick="MostrarApartado2();">
+          </li>
+          <li class="Paginas">
+            <a href="IsmaelMarcosTipus.html">Tipus i zones</a>
+            <input type="image" alt="Mostrar Apartats de Tipus, zones i altres" src="Images/Header/Flecha.png" class="Button" onclick="MostrarTipos();">
+          </li>
+          <li class="Paginas">
+            <a href="IsmaelMarcosEnquesta.html">Enquesta</a>
+            <input type="image" alt="Mostrar Apartats de Enquesta" src="Images/Header/Flecha.png" class="Button" onclick="MostrarEnquesta();">
+          </li>
+        </ul>
+        <ul id="ApartadoHome" class="Apartados">
+          <li>
+            <input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarPaginas();">
+          </li>
+          <li>
+            <a href="IsmaelMarcos.html">IA - Introducció</a>
+          </li>
+          <li>
+            <a href="IsmaelMarcos.html">Història de la IA</a>
+          </li>
+          <li>
+            <a href="IsmaelMarcos.html">Llocs d'Interés</a>
+          </li>
+        </ul>
+        <ul id="Apartado2" class="Apartados">
+          <li>
+            <input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarPaginas();">
+          </li>
+          <li>
+            <a href="IsmaelMarcosAspectes.html">Què és?</a>
+            <input type="image" alt="Mostrar Subapartats de Què és?" src="Images/Header/Flecha.png" class="Button" onclick="MostrarSubApartado21()">
+          </li>
+          <li>
+            <a href="IsmaelMarcosAspectes.html">Quina importància té?</a>
+            <input type="image" alt="Mostrar Subapartats de Quina importància té?" src="Images/Header/Flecha.png" class="Button" onclick="MostrarSubApartado22()">
+          </li>
+        </ul>
+        <ul id="SubApartado21" class="Apartados">
+          <li>
+            <input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarApartado2();">
+          </li>
+          <li>
+            <a href="IsmaelMarcosAspectes.html">Què és la IA?</a>
+          </li>
+        </ul>
+        <ul id="SubApartado22" class="Apartados">
+          <li>
+            <input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarApartado2();">
+          </li>
+          <li>
+            <a href="IsmaelMarcosAspectes.html">Proposta de regulació de la UE</a>
+          </li>
+        </ul>
+        <ul id="ApartadoTipos" class="Apartados">
+          <li>
+            <input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarPaginas();">
+          </li>
+          <li>
+            <a id="TiposIA">Tipus de IA</a>
+          </li>
+          <li>
+            <a id="SectoresIA">Sectors en els que s'aplica</a>
+          </li>
+        </ul>
+        <ul id="ApartadoEnquesta" class="Apartados">
+          <li>
+            <input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarPaginas();">
+          </li>
+          <li>
+            <a href="IsmaelMarcosEnquesta.html">Satisfacció del client</a>
+          </li>
+        </ul>
+        <input type="image" alt="Iniciar sessió" src="Images/Header/Login.png" id="Session" onclick="MostrarInicioSesion();">
+      </nav>
+      <div>
+        <form action="mailto:ismael.marcos@iescasablancas.cat" method="post" enctype="text/plain" id="Inicio">
+          <img src="Images/Header/Cerrar.png" id="Cerrar" alt="Tancar" onclick="OcultarInicioSesion();">
+          <div>
+            <label for="camp">Usuari: </label>
+            <input name="Usuari" id="camp" type="text" size="15" maxlength="25" />
+          </div>
+          <div>
+            <label for="pass">Contrasenya: </label>
+            <input name="Contrasenya" type="password" id="pass" size="15" maxlength="20" />
+          </div>
+          <input type="submit" value="Iniciar sessió" />
+        </form>
+      </div>
+      <div id="HedPrinc">
+        <div id="Logo">
+          <a href="IsmaelMarcos.html">
+            <img src="Images/Header/Logo.png" id="LogoIMG" alt="Logo">
+          </a>
         </div>
-
-        <div id="HedPrinc">
-
-            <div id="Logo">
-                <a href="IsmaelMarcos.html"><img src="Images/Header/Logo.png" id="LogoIMG" alt="Logo"></a>
-            </div>
-
-            <div id="Centro">
-
-                <div id="Titulo">
-
-                    <h1>
-                        Tipus i zones
-                    </h1>
-
-                </div> 
-
-                <div id="Mensaje">
-
-                    <h3>
-                        Internauta, et trobes a la pàgina "Tipus i zones".
-                    </h3>
-
-                </div>
-
-            </div>
-
-            <div id="Empty"></div>
-
+        <div id="Centro">
+          <div id="Titulo">
+            <h1> Tipus i zones </h1>
+          </div>
+          <div id="Mensaje">
+            <h3> Internauta, et trobes a la pàgina "Tipus i zones". </h3>
+          </div>
         </div>
-
-        <div id="HaciaAbajo">
-            <img src="Images/Header/FlechaAbajo.png" alt="Vés cap a baix" id="FlechaAbajo">
-        </div>
-
+        <div id="Empty"></div>
+      </div>
+      <div id="HaciaAbajo">
+        <img src="Images/Header/FlechaAbajo.png" alt="Vés cap a baix" id="FlechaAbajo">
+      </div>
     </header>
-
     <section id="Principal">
-
-        <article id="Article1T">
-           
-            <h2>Tipus</h2>
-            <h4>De IA</h4>
-
-            <p><br>La IA no es tant sols el intent d'imitar a un humà, si no qué n'hi han varis tipus diferenciats per varies característiques. A simple vista, podem diferenciar-ne dos:</p>
-
-            <h5><br>IA restringida</h5>
-            
-            <p><br>Són IA que tenen com a objectiu complir una sola tasca o una sèrie de tasques molt semblants entre si.</p>
-
-            <h5><br>IA general</h5>
-
-            <p><br>Aquesta IA és la que s'usa principalment per emular la intel·ligència humana i són capaços de pensar tal com un humà, encara que actualment es troba força verda.</p>
-
-            <p><br>Aquests dos son els tipus generals, però, segons Stuart J. Russell i Peter Norvig, n'hi han quatre subcategories dins d'aquestes dues:</p>
-
-            <h5><br>Sistemes que pensen com a humans</h5>
-            <br>
-            <div class="ContainerIMG">
-                <figure>
-
-                    <a href="https://www.ibm.com/docs/es/spss-modeler/SaaS?topic=networks-neural-model" target="_blank"><div class="divIMG" id="A11IMG">
-        
-                        <div class="Ocultar">
-        
-                            <h2 class="TitleIMG">Sistemes que pensen com a humans</h2>
-        
-                        </div>
-        
-                    </div></a>
-        
-                </figure>
+      <article id="Article1T">
+        <h2>Tipus</h2>
+        <h4>De IA</h4>
+        <p>
+          <br>La IA no es tant sols el intent d'imitar a un humà, si no qué n'hi han varis tipus diferenciats per varies característiques. A simple vista, podem diferenciar-ne dos:
+        </p>
+        <h5>
+          <br>IA restringida
+        </h5>
+        <p>
+          <br>Són IA que tenen com a objectiu complir una sola tasca o una sèrie de tasques molt semblants entre si.
+        </p>
+        <h5>
+          <br>IA general
+        </h5>
+        <p>
+          <br>Aquesta IA és la que s'usa principalment per emular la intel·ligència humana i són capaços de pensar tal com un humà, encara que actualment es troba força verda.
+        </p>
+        <p>
+          <br>Aquests dos son els tipus generals, però, segons Stuart J. Russell i Peter Norvig, n'hi han quatre subcategories dins d'aquestes dues:
+        </p>
+        <h5>
+          <br>Sistemes que pensen com a humans
+        </h5>
+        <br>
+        <div class="ContainerIMG">
+          <figure>
+            <a href="https://www.ibm.com/docs/es/spss-modeler/SaaS?topic=networks-neural-model" target="_blank">
+              <div class="divIMG" id="A11IMG">
+                <div class="Ocultar">
+                  <h2 class="TitleIMG">Sistemes que pensen com a humans</h2>
+                </div>
+              </div>
+            </a>
+          </figure>
+        </div>
+        <p>
+          <br>Un exemple podría ser les xarxes neuronals.
+        </p>
+        <h5>
+          <br>Sistemes que actuen com a humans
+        </h5>
+        <br>
+        <div class="ContainerIMG">
+          <figure>
+            <div class="divIMG" id="A12IMG">
+              <div class="Ocultar">
+                <h2 class="TitleIMG">Sistemes que actuen com a humans</h2>
+              </div>
             </div>
-
-            <p><br>Un exemple podría ser les xarxes neuronals.</p>
-
-            <h5><br>Sistemes que actuen com a humans</h5>
-            <br>
-            <div class="ContainerIMG">
-                <figure>
-
-                    <div class="divIMG" id="A12IMG">
-        
-                        <div class="Ocultar">
-        
-                            <h2 class="TitleIMG">Sistemes que actuen com a humans</h2>
-        
-                        </div>
-        
-                    </div>
-        
-                </figure>
-            </div>
-
-            <p><br>Un exemple pot ser els robots.</p>
-
-            <h5><br>Sistemes que pensen racionalment</h5>
-            <br>
-            <div class="ContainerIMG">
-                <figure>
-
-                    <a href="https://automatizacion.pe/que-son-los-sistemas-expertos-y-cuales-son-sus-componentes/" target="_blank"><div class="divIMG" id="A13IMG">
-        
-                        <div class="Ocultar">
-        
-                            <h2 class="TitleIMG">Sistemes que pensen racionalment</h2>
-        
-                        </div>
-        
-                    </div></a>
-        
-                </figure>
-            </div>
-
-            <p><br>Un exemple podría ser els sistemes experts.</p>
-
-            <h5><br>Sistemes que actuen racionalment</h5>
-            <br>
-            <div class="ContainerIMG">
-                <figure>
-
-                    <a href="https://es.wikipedia.org/wiki/Agente_inteligente_(inteligencia_artificial)" target="_blank"><div class="divIMG" id="A14IMG">
-        
-                        <div class="Ocultar">
-        
-                            <h2 class="TitleIMG">Sistemes que actuen racionalment</h2>
-        
-                        </div>
-        
-                    </div></a>
-        
-                </figure>
-            </div>
-
-            <p><br>Un exemple pot ser els agents intel·ligents.</p>
-
-        </article>
-
-        <div id="ContainerArticle2T">
+          </figure>
+        </div>
+        <p>
+          <br>Un exemple pot ser els robots.
+        </p>
+        <h5>
+          <br>Sistemes que pensen racionalment
+        </h5>
+        <br>
+        <div class="ContainerIMG">
+          <figure>
+            <a href="https://automatizacion.pe/que-son-los-sistemas-expertos-y-cuales-son-sus-componentes/" target="_blank">
+              <div class="divIMG" id="A13IMG">
+                <div class="Ocultar">
+                  <h2 class="TitleIMG">Sistemes que pensen racionalment</h2>
+                </div>
+              </div>
+            </a>
+          </figure>
+        </div>
+        <p>
+          <br>Un exemple podría ser els sistemes experts.
+        </p>
+        <h5>
+          <br>Sistemes que actuen racionalment
+        </h5>
+        <br>
+        <div class="ContainerIMG">
+          <figure>
+            <a href="https://es.wikipedia.org/wiki/Agente_inteligente_(inteligencia_artificial)" target="_blank">
+              <div class="divIMG" id="A14IMG">
+                <div class="Ocultar">
+                  <h2 class="TitleIMG">Sistemes que actuen racionalment</h2>
+                </div>
+              </div>
+            </a>
+          </figure>
+        </div>
+        <p>
+          <br>Un exemple pot ser els agents intel·ligents.
+        </p>
+      </article>
+      <div id="ContainerArticle2T">
         <article id="Article2T">
-            
-            <h2>Zones i sectors</h2>
-            <h4>en les que s'aplica</h4>
-
-            <p><br>Actualment, la IA està estesa per a tots els sectors:</p>
-
-            <h5><br>Compres per internet, publicitat i recerques a la web</h5>
-            <br>
-            <div class="ContainerIMG">
-                <figure>
-
-                    <div class="divIMG" id="A21IMG">
-        
-                        <div class="Ocultar">
-        
-                            <h2 class="TitleIMG">Google IA</h2>
-        
-                        </div>
-        
-                    </div>
-        
-                </figure>
-            </div>
-
-            <p><br>La IA s'usa força per crear recomanacions personalitzades per als consumidors. Un exemple pràctic pot ser Google, que utilitza les teves dades de navegació, interès i últimes compres per mostrar contingut que t'agrada, és a dir, personalitzar l'experiència de l'usuari.</p>
-
-            <h5><br>Assistents personals digitals</h5>
-            <br>
-            <div class="ContainerIMG">
-                <figure>
-
-                    <div class="divIMG" id="A22IMG">
-        
-                        <div class="Ocultar">
-        
-                            <h2 class="TitleIMG">Asistent de Windows 10</h2>
-        
-                        </div>
-        
-                    </div>
-        
-                </figure>
-            </div>
-
-            <p><br>Els telèfons mòbils i ordinadors compten amb una IA per recomanar, ajudar, organitzar i entretenir l'usuari, d'una manera força humana, ja que la IA escolta l'usuari i després aquest li respon.</p>
-
-            <h5><br>Traduccions automàtiques</h5>
-            <br>
-            <div class="ContainerIMG">
-                <figure>
-
-                    <div class="divIMG" id="A23IMG">
-        
-                        <div class="Ocultar">
-        
-                            <h2 class="TitleIMG">Traduccions automàtiques</h2>
-        
-                        </div>
-        
-                    </div>
-        
-                </figure>
-            </div>
-
-            <p><br>El programari de traducció d'idiomes, sigui basat en text o en veu, es basa en la intel·ligència artificial per proporcionar i millorar les traduccions. Això també s'aplica, per exemple, al subtitulat automàtic.</p>
-
-            <h5><br>Vehicles / Transport</h5>
-            <br>
-            <div class="ContainerIMG">
-                <figure>
-
-                    <div class="divIMG" id="A24IMG">
-        
-                        <div class="Ocultar">
-        
-                            <h2 class="TitleIMG">Transport amb IA</h2>
-        
-                        </div>
-        
-                    </div>
-        
-                </figure>
-            </div>
-
-            <p><br>A aquest camp li falta prou per recórrer, ja que encara està una mica verd i s'ha de millorar a causa de la manca de detecció sobre situacions perilloses i accidents, però això no impedeix que no existeixi. Així, doncs, en aquest camp la IA és la que pren el volant, així com la música.</p>
-
-            <h5><br>Ciberseguretat</h5>
-            <br>
-            <div class="ContainerIMG">
-                <figure>
-
-                    <div class="divIMG" id="A25IMG">
-        
-                        <div class="Ocultar">
-        
-                            <h2 class="TitleIMG">Ciberseguritat</h2>
-        
-                        </div>
-        
-                    </div>
-        
-                </figure>
-            </div>
-
-            <p><br>Els sistemes d'intel·ligència artificial poden ajudar a reconèixer i lluitar contra ciber-atacants i altres amenaces (com els atacs DDoS) en línia basant-se en dades contínues rebudes, reconeixent patrons i impedint els atacs.</p>
-
-            <h5><br>Lluita contra la desinformació</h5>
-            <br>
-            <div class="ContainerIMG">
-                <figure>
-
-                    <div class="divIMG" id="A26IMG">
-        
-                        <div class="Ocultar">
-        
-                            <h2 class="TitleIMG">Exemple de bloqueig per desinformar</h2>
-        
-                        </div>
-        
-                    </div>
-        
-                </figure>
-            </div>
-
-            <p><br>Algunes aplicacions d'IA poden detectar notícies falses en extreure informació de les xarxes socials, cercar paraules sensacionals o alarmants i identificar quines fonts en línia es consideren autoritzades. Un exemple clar és l'etiqueta de desinformació que surt a Instagram quan la IA ho detecta.</p>
-        
-            <h5><br>Salut</h5>
-            <br>
-            <div class="ContainerIMG">
-                <figure>
-
-                    <div class="divIMG" id="A27IMG">
-        
-                        <div class="Ocultar">
-        
-                            <h2 class="TitleIMG">IA en la salut</h2>
-        
-                        </div>
-        
-                    </div>
-        
-                </figure>
-            </div>
-
-            <p><br>En el camp de la Salut, la IA s'usa per analitzar grans quantitats de dades sobre la salut per trobar patrons que poden ajudar a trobar nous descobriments a la medicina / identificar factors genètics susceptibles de desenvolupar una malaltia i també ajuda a personalitzar i millorar els diagnòstics individuals.<br>A més, hi ha diversos assistents digitals que ens identifiquen els nostres símptomes per realitzar un diagnòstic.</p>
-
-            <h5><br>A part de tot això</h5>
-
-            <p><br>A part de tots els sectors i zones que he comentat, n'hi ha molts més sectors i zones a les quals la IA s'ha aplicat. S'ha de dir que encara hi ha sectors per aplicar la IA, però en un futur no molt llunyà s'integrarà, així doncs és qüestió de temps que tot estigui controlat per la IA.</p>
+          <h2>Zones i sectors</h2>
+          <h4>en les que s'aplica</h4>
+          <p>
+            <br>Actualment, la IA està estesa per a tots els sectors:
+          </p>
+          <h5>
+            <br>Compres per internet, publicitat i recerques a la web
+          </h5>
+          <br>
+          <div class="ContainerIMG">
+            <figure>
+              <div class="divIMG" id="A21IMG">
+                <div class="Ocultar">
+                  <h2 class="TitleIMG">Google IA</h2>
+                </div>
+              </div>
+            </figure>
+          </div>
+          <p>
+            <br>La IA s'usa força per crear recomanacions personalitzades per als consumidors. Un exemple pràctic pot ser Google, que utilitza les teves dades de navegació, interès i últimes compres per mostrar contingut que t'agrada, és a dir, personalitzar l'experiència de l'usuari.
+          </p>
+          <h5>
+            <br>Assistents personals digitals
+          </h5>
+          <br>
+          <div class="ContainerIMG">
+            <figure>
+              <div class="divIMG" id="A22IMG">
+                <div class="Ocultar">
+                  <h2 class="TitleIMG">Asistent de Windows 10</h2>
+                </div>
+              </div>
+            </figure>
+          </div>
+          <p>
+            <br>Els telèfons mòbils i ordinadors compten amb una IA per recomanar, ajudar, organitzar i entretenir l'usuari, d'una manera força humana, ja que la IA escolta l'usuari i després aquest li respon.
+          </p>
+          <h5>
+            <br>Traduccions automàtiques
+          </h5>
+          <br>
+          <div class="ContainerIMG">
+            <figure>
+              <div class="divIMG" id="A23IMG">
+                <div class="Ocultar">
+                  <h2 class="TitleIMG">Traduccions automàtiques</h2>
+                </div>
+              </div>
+            </figure>
+          </div>
+          <p>
+            <br>El programari de traducció d'idiomes, sigui basat en text o en veu, es basa en la intel·ligència artificial per proporcionar i millorar les traduccions. Això també s'aplica, per exemple, al subtitulat automàtic.
+          </p>
+          <h5>
+            <br>Vehicles / Transport
+          </h5>
+          <br>
+          <div class="ContainerIMG">
+            <figure>
+              <div class="divIMG" id="A24IMG">
+                <div class="Ocultar">
+                  <h2 class="TitleIMG">Transport amb IA</h2>
+                </div>
+              </div>
+            </figure>
+          </div>
+          <p>
+            <br>A aquest camp li falta prou per recórrer, ja que encara està una mica verd i s'ha de millorar a causa de la manca de detecció sobre situacions perilloses i accidents, però això no impedeix que no existeixi. Així, doncs, en aquest camp la IA és la que pren el volant, així com la música.
+          </p>
+          <h5>
+            <br>Ciberseguretat
+          </h5>
+          <br>
+          <div class="ContainerIMG">
+            <figure>
+              <div class="divIMG" id="A25IMG">
+                <div class="Ocultar">
+                  <h2 class="TitleIMG">Ciberseguritat</h2>
+                </div>
+              </div>
+            </figure>
+          </div>
+          <p>
+            <br>Els sistemes d'intel·ligència artificial poden ajudar a reconèixer i lluitar contra ciber-atacants i altres amenaces (com els atacs DDoS) en línia basant-se en dades contínues rebudes, reconeixent patrons i impedint els atacs.
+          </p>
+          <h5>
+            <br>Lluita contra la desinformació
+          </h5>
+          <br>
+          <div class="ContainerIMG">
+            <figure>
+              <div class="divIMG" id="A26IMG">
+                <div class="Ocultar">
+                  <h2 class="TitleIMG">Exemple de bloqueig per desinformar</h2>
+                </div>
+              </div>
+            </figure>
+          </div>
+          <p>
+            <br>Algunes aplicacions d'IA poden detectar notícies falses en extreure informació de les xarxes socials, cercar paraules sensacionals o alarmants i identificar quines fonts en línia es consideren autoritzades. Un exemple clar és l'etiqueta de desinformació que surt a Instagram quan la IA ho detecta.
+          </p>
+          <h5>
+            <br>Salut
+          </h5>
+          <br>
+          <div class="ContainerIMG">
+            <figure>
+              <div class="divIMG" id="A27IMG">
+                <div class="Ocultar">
+                  <h2 class="TitleIMG">IA en la salut</h2>
+                </div>
+              </div>
+            </figure>
+          </div>
+          <p>
+            <br>En el camp de la Salut, la IA s'usa per analitzar grans quantitats de dades sobre la salut per trobar patrons que poden ajudar a trobar nous descobriments a la medicina / identificar factors genètics susceptibles de desenvolupar una malaltia i també ajuda a personalitzar i millorar els diagnòstics individuals. <br>A més, hi ha diversos assistents digitals que ens identifiquen els nostres símptomes per realitzar un diagnòstic.
+          </p>
+          <h5>
+            <br>A part de tot això
+          </h5>
+          <p>
+            <br>A part de tots els sectors i zones que he comentat, n'hi ha molts més sectors i zones a les quals la IA s'ha aplicat. S'ha de dir que encara hi ha sectors per aplicar la IA, però en un futur no molt llunyà s'integrarà, així doncs és qüestió de temps que tot estigui controlat per la IA.
+          </p>
         </article>
-        </div>
-
+      </div>
     </section>
-
     <footer id="Pie">
-        <p>@IA Interactive</p> <br>
-        <p>Autor: Ismael Marcos Martínez</p> <br>
-        <div>
-            <img src="Images/Footer/Instagram.png" class="Footerimg" alt="Instagram">
-            <img src="Images/Footer/Facebook.png" class="Footerimg" alt="Facebook">
-            <img src="Images/Footer/Twitter.png" class="Footerimg" alt="Twitter">
-        </div>
+      <p>@IA Interactive</p>
+      <br>
+      <p>Autor: Ismael Marcos Martínez</p>
+      <br>
+      <div>
+        <img src="Images/Footer/Instagram.png" class="Footerimg" alt="Instagram">
+        <img src="Images/Footer/Facebook.png" class="Footerimg" alt="Facebook">
+        <img src="Images/Footer/Twitter.png" class="Footerimg" alt="Twitter">
+      </div>
     </footer>
-
     <script>
+      function MostrarPaginas() {
+        document.getElementById("Lista").style.display = "flex";
+        document.getElementById("Apartado2").style.display = "none";
+        document.getElementById("ApartadoHome").style.display = "none";
+        document.getElementById("ApartadoTipos").style.display = "none";
+        document.getElementById("ApartadoEnquesta").style.display = "none";
+      }
 
-        function MostrarPaginas(){
-            document.getElementById("Lista").style.display = "flex";
-            document.getElementById("Apartado2").style.display = "none";
-            document.getElementById("ApartadoHome").style.display = "none";
-            document.getElementById("ApartadoTipos").style.display = "none";
-            document.getElementById("ApartadoEnquesta").style.display = "none";
-        }
+      function MostrarApartadoHome() {
+        document.getElementById("Lista").style.display = "none";
+        document.getElementById("ApartadoHome").style.display = "flex";
+      }
 
+      function MostrarApartado2() {
+        document.getElementById("Lista").style.display = "none";
+        document.getElementById("SubApartado21").style.display = "none";
+        document.getElementById("SubApartado22").style.display = "none";
+        document.getElementById("Apartado2").style.display = "flex";
+      }
 
-        function MostrarApartadoHome(){
-            document.getElementById("Lista").style.display = "none";
-            document.getElementById("ApartadoHome").style.display = "flex";
-        }
+      function MostrarSubApartado21() {
+        document.getElementById("SubApartado21").style.display = "flex";
+        document.getElementById("Apartado2").style.display = "none";
+      }
 
-        function MostrarApartado2(){
-            document.getElementById("Lista").style.display = "none";
-            document.getElementById("SubApartado21").style.display = "none";
-            document.getElementById("SubApartado22").style.display = "none";
-            document.getElementById("Apartado2").style.display = "flex";
-        }
+      function MostrarSubApartado22() {
+        document.getElementById("SubApartado22").style.display = "flex";
+        document.getElementById("Apartado2").style.display = "none";
+      }
 
-            function MostrarSubApartado21(){
-                document.getElementById("SubApartado21").style.display = "flex";
-                document.getElementById("Apartado2").style.display = "none";
-            }
+      function MostrarTipos() {
+        document.getElementById("Lista").style.display = "none";
+        document.getElementById("ApartadoTipos").style.display = "flex";
+        document.getElementById("SubApartado31").style.display = "none";
+        document.getElementById("SubApartado32").style.display = "none";
+      }
 
-            function MostrarSubApartado22(){
-                document.getElementById("SubApartado22").style.display = "flex";
-                document.getElementById("Apartado2").style.display = "none";
-            }
+      function MostrarEnquesta() {
+        document.getElementById("Lista").style.display = "none";
+        document.getElementById("ApartadoEnquesta").style.display = "flex";
+      }
 
-        function MostrarTipos(){
-            document.getElementById("Lista").style.display = "none";
-            document.getElementById("ApartadoTipos").style.display = "flex";
-            document.getElementById("SubApartado31").style.display = "none";
-            document.getElementById("SubApartado32").style.display = "none";
-            
-        }
+      function MostrarInicioSesion() {
+        document.getElementById("Inicio").style.display = "flex"
+      }
 
-        function MostrarEnquesta(){
-            document.getElementById("Lista").style.display = "none";
-            document.getElementById("ApartadoEnquesta").style.display = "flex";
-        }
-
-
-        function MostrarInicioSesion(){
-            document.getElementById("Inicio").style.display = "flex"
-        }
-
-        function OcultarInicioSesion(){
-            document.getElementById("Inicio").style.display = "none"
-        }
-
-        
-        document.getElementById("TiposIA").addEventListener("click",()=>{
-            document.getElementById("Article1T").scrollIntoView();
-        })
-
-        document.getElementById("SectoresIA").addEventListener("click",()=>{
-            document.getElementById("Article2T").scrollIntoView();
-        })
-        
+      function OcultarInicioSesion() {
+        document.getElementById("Inicio").style.display = "none"
+      }
+      document.getElementById("TiposIA").addEventListener("click", () => {
+        document.getElementById("Article1T").scrollIntoView();
+      })
+      document.getElementById("SectoresIA").addEventListener("click", () => {
+        document.getElementById("Article2T").scrollIntoView();
+      })
     </script>
-</body>
+  </body>
 </html>

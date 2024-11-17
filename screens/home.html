@@ -1,333 +1,316 @@
+<!-- To validate HTML, please use: https://validator.w3.org/nu/#textarea -->
 <!DOCTYPE html>
 <html lang="ca">
-<head>
-    <meta charset="UTF-8">
-    <link rel="STYLESHEET" type="text/css" href="IsmaelMarcos.css">
-    <link rel="STYLESHEET" type="text/css" href="IsmaelMarcosHome.css">
+  <head>
     <meta name="author" content="Ismael Marcos Martínez">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - A6</title>
-</head>
-<body>
+    <meta name="description" content="A web page I created in ~2021.">
+    <meta name="copyright" content="Copyright owner">
 
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="keywords" content="Webpage, HTML, CSS, JS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <link rel="stylesheet" type="text/css" href="../styles/home.css">
+
+    <title>Home</title>
+  </head>
+  <body>
     <div id="divtransicioncolor"></div>
-    
     <div id="divtransicion"></div>
 
     <header id="Header">
+      <nav id="Barra">
+        <ul id="Lista">
+          <li class="Paginas">
+            <a href="IsmaelMarcos.html" target="_self">Home</a>
+            <input type="image" alt="Mostrar Apartats de Home" src="Images/Header/Flecha.png" id="Home" class="Button" onclick="MostrarApartadoHome();">
+          </li>
+          <li class="Paginas">
+            <a href="IsmaelMarcosAspectes.html">Aspectes Básics</a>
+            <input type="image" alt="Mostrar Apartats de Aspectes Básics" src="Images/Header/Flecha.png" class="Button" onclick="MostrarApartado2();">
+          </li>
+          <li class="Paginas">
+            <a href="IsmaelMarcosTipus.html">Tipus i zones</a>
+            <input type="image" alt="Mostrar Apartats de Tipus, zones i altres" src="Images/Header/Flecha.png" class="Button" onclick="MostrarTipos();">
+          </li>
+          <li class="Paginas">
+            <a href="IsmaelMarcosEnquesta.html">Enquesta</a>
+            <input type="image" alt="Mostrar Apartats de Enquesta" src="Images/Header/Flecha.png" class="Button" onclick="MostrarEnquesta();">
+          </li>
+        </ul>
 
-        <nav id="Barra">
-            
-            <ul id="Lista">
+        <ul id="ApartadoHome" class="Apartados">
+          <li>
+            <input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarPaginas();">
+          </li>
+          <li>
+            <a id="Home1">IA - Introducció</a>
+          </li>
+          <li>
+            <a id="Home2">Història de la IA</a>
+          </li>
+          <li>
+            <a id="Home3">Llocs d'Interés</a>
+          </li>
+        </ul>
 
-                <li class="Paginas">
-                    <a href="IsmaelMarcos.html" target="_self">Home</a>
-                    <input type="image" alt="Mostrar Apartats de Home" src="Images/Header/Flecha.png" id="Home" class="Button" onclick="MostrarApartadoHome();">
-                </li>
+        <ul id="Apartado2" class="Apartados">
+          <li>
+            <input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarPaginas();">
+          </li>
+          <li>
+            <a href="IsmaelMarcosAspectes.html">Què és?</a>
+            <input type="image" alt="Mostrar Subapartats de Què és?" src="Images/Header/Flecha.png" class="Button" onclick="MostrarSubApartado21()">
+          </li>
+          <li>
+            <a href="IsmaelMarcosAspectes.html">Quina importància té?</a>
+            <input type="image" alt="Mostrar Subapartats de Quina importància té?" src="Images/Header/Flecha.png" class="Button" onclick="MostrarSubApartado22()">
+          </li>
+        </ul>
 
-                <li class="Paginas">
-                    <a href="IsmaelMarcosAspectes.html">Aspectes Básics</a>
-                    <input type="image" alt="Mostrar Apartats de Aspectes Básics" src="Images/Header/Flecha.png" class="Button" onclick="MostrarApartado2();">
-                </li>
+        <ul id="SubApartado21" class="Apartados">
+          <li>
+            <input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarApartado2();">
+          </li>
+          <li>
+            <a href="IsmaelMarcosAspectes.html">Què és la IA?</a>
+          </li>
+        </ul>
 
-                <li class="Paginas">
-                    <a href="IsmaelMarcosTipus.html">Tipus i zones</a>
-                    <input type="image" alt="Mostrar Apartats de Tipus, zones i altres" src="Images/Header/Flecha.png" class="Button" onclick="MostrarTipos();">
-                </li>
+        <ul id="SubApartado22" class="Apartados">
+          <li>
+            <input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarApartado2();">
+          </li>
+          <li>
+            <a href="IsmaelMarcosAspectes.html">Proposta de regulació de la UE</a>
+          </li>
+        </ul>
 
-                <li class="Paginas">
-                    <a href="IsmaelMarcosEnquesta.html">Enquesta</a>
-                    <input type="image" alt="Mostrar Apartats de Enquesta" src="Images/Header/Flecha.png" class="Button" onclick="MostrarEnquesta();">
-                </li>
-                
-            </ul>
+        <ul id="ApartadoTipos" class="Apartados">
+          <li>
+            <input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarPaginas();">
+          </li>
+          <li>
+            <a href="IsmaelMarcosTipus.html">Tipus de IA</a>
+          </li>
+          <li>
+            <a href="IsmaelMarcosTipus.html">Sectors en els que s'aplica</a>
+          </li>
+        </ul>
 
-                <ul id="ApartadoHome" class="Apartados">
-                    <li>
-                        <input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarPaginas();">
-                    </li>
-                    <li><a id="Home1">IA - Introducció</a></li>
-                    <li><a id="Home2">Història de la IA</a></li>
-                    <li><a id="Home3">Llocs d'Interés</a></li>
-                </ul>
+        <ul id="ApartadoEnquesta" class="Apartados">
+          <li>
+            <input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarPaginas();">
+          </li>
+          <li>
+            <a href="IsmaelMarcosEnquesta.html">Satisfacció del client</a>
+          </li>
+        </ul>
 
-                <ul id="Apartado2" class="Apartados">
-                    <li><input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarPaginas();"></li>
+        <input type="image" alt="Iniciar sessió" src="Images/Header/Login.png" id="Session" onclick="MostrarInicioSesion();">
+      </nav>
 
-                    <li>
-                        <a href="IsmaelMarcosAspectes.html">Què és?</a>
-                        <input type="image" alt="Mostrar Subapartats de Què és?" src="Images/Header/Flecha.png" class="Button" onclick="MostrarSubApartado21()">
-                    </li>
+      <div>
+        <form action="mailto:ismael.marcos@iescasablancas.cat" method="post" enctype="text/plain" id="Inicio">
+          <img src="Images/Header/Cerrar.png" alt="Tancar" id="Cerrar" onclick="OcultarInicioSesion();">
+          <div>
+            <label for="camp">Usuari: </label>
+            <input name="Usuari" id="camp" type="text" size="15" maxlength="25" />
+          </div>
+          <div>
+            <label for="pass">Contrasenya: </label>
+            <input name="Contrasenya" type="password" id="pass" size="15" maxlength="20" />
+          </div>
+          <input type="submit" value="Iniciar sessió" />
+        </form>
+      </div>
 
-                    <li>
-                        <a href="IsmaelMarcosAspectes.html">Quina importància té?</a>
-                        <input type="image" alt="Mostrar Subapartats de Quina importància té?" src="Images/Header/Flecha.png" class="Button" onclick="MostrarSubApartado22()">
-                    </li>
-
-                </ul>
-
-                    <ul id="SubApartado21" class="Apartados">
-                        <li><input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarApartado2();"></li>
-
-                        <li>
-                            <a href="IsmaelMarcosAspectes.html">Què és la IA?</a>
-                        </li>
-                    </ul>
-
-                    <ul id="SubApartado22" class="Apartados">
-                        <li><input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarApartado2();"></li>
-
-                        <li>
-                            <a href="IsmaelMarcosAspectes.html">Proposta de regulació de la UE</a>
-                        </li>
-                    </ul>
-
-                <ul id="ApartadoTipos" class="Apartados">
-                    <li><input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarPaginas();"></li>
-
-                    <li>
-                        <a href="IsmaelMarcosTipus.html">Tipus de IA</a>
-                    </li>
-
-                    <li>
-                        <a href="IsmaelMarcosTipus.html">Sectors en els que s'aplica</a>
-                    </li>
-
-                </ul>
-
-                <ul id="ApartadoEnquesta" class="Apartados">
-                    <li><input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarPaginas();"></li>
-                    <li><a href="IsmaelMarcosEnquesta.html">Satisfacció del client</a></li>
-                </ul>
-
-            <input type="image" alt="Iniciar sessió" src="Images/Header/Login.png" id="Session" onclick="MostrarInicioSesion();">
-
-        </nav>
-
-        <div>
-            <form action="mailto:ismael.marcos@iescasablancas.cat" method="post" enctype="text/plain" id="Inicio">
-
-                <img src="Images/Header/Cerrar.png" alt="Tancar" id="Cerrar" onclick="OcultarInicioSesion();">
-
-                <div>
-
-                    <label for="camp">Usuari: </label>
-                    <input name="Usuari" id="camp" type="text" size="15" maxlength="25" />
-
-                </div>
-
-                <div>
-
-                    <label for="pass">Contrasenya: </label>
-                    <input name="Contrasenya" type="password" id="pass" size="15" maxlength="20" />
-
-                </div>
-
-                <input type="submit" value="Iniciar sessió"/>
-            </form>
+      <div id="HedPrinc">
+        <div id="Logo">
+          <a href="IsmaelMarcos.html">
+            <img src="Images/Header/Logo.png" id="LogoIMG" alt="Logo">
+          </a>
         </div>
-
-        <div id="HedPrinc">
-
-            <div id="Logo">
-                <a href="IsmaelMarcos.html"><img src="Images/Header/Logo.png" id="LogoIMG" alt="Logo"></a>
-            </div>
-
-            <div id="Centro">
-
-                <div id="Titulo">
-
-                    <h1>
-                        Intel·ligència Artificial
-                    </h1>
-
-                </div> 
-
-                <div id="Mensaje">
-
-                    <h3>
-                        Bon dia, internauta, et trobes a la pàgina principal.
-                    </h3>
-
-                </div>
-
-            </div>
-
-            <div id="Empty"></div>
-
+        <div id="Centro">
+          <div id="Titulo">
+            <h1> Intel·ligència Artificial </h1>
+          </div>
+          <div id="Mensaje">
+            <h3> Bon dia, internauta, et trobes a la pàgina principal. </h3>
+          </div>
         </div>
+        <div id="Empty"></div>
+      </div>
 
-        <div id="HaciaAbajo">
-            <img src="Images/Header/FlechaAbajo.png" alt="Vés cap a baix" id="FlechaAbajo">
-        </div>
-
+      <div id="HaciaAbajo">
+        <img src="Images/Header/FlechaAbajo.png" alt="Vés cap a baix" id="FlechaAbajo">
+      </div>
     </header>
 
     <section id="Principal">
-
-        <article id="A3">
-
-            <h2>Llocs d'Interés</h2>
-            <h4>Pàgines Externes</h4>
-            
-            <p><br>Primer de tot, he de suggerir un reportatge bastant bo en el qual t'explica de manera adequada el que és la IA, la seva història, la diferència entre una IA i un programa informàtic, els tipus d'IA més usats, entre altres.
-            <br>A part, comentar que és una de les pàgines que he visitat per extreure informació a prop de la IA, básicament per poder fer aquesta pàgina.</p>
-
-            <figure>
-                <a href="https://computerhoy.com/reportajes/tecnologia/inteligencia-artificial-469917" target="_blank"><img src="Images/Section/Home/A3/ImagenA31.png" class="ArticleIMG" id="ImagenA31"></a>
-                <figcaption>Reportatge de "Computer Hoy" a prop de la IA</figcaption>
-            </figure>
-
-            <p><br>Si vols més com el de abans, recomano llegir la entrada que té la IA a la Viquipèdia, ja que recopila de manera exacta varis successos de la història de la IA, a part de que explica una mica el que és, la regulació, entre altres.</p>
-
-            <figure>
-                <a href="https://es.wikipedia.org/wiki/Inteligencia_artificial#Enlaces_externos" target="_blank"><img src="Images/Section/Home/A3/ImagenA32.png" class="ArticleIMG" id="ImagenA32"></a>
-                <figcaption>Entrada de la IA en la Viquipèdia</figcaption>
-            </figure>
-
-            <p><br>Si vols veure uns quants exemples de IA en programes, et deixo un article que parla sobre això mateix, i que en recomana uns quants. Fins i tot podries instal·lar-te algun, si vols.</p>
-
-            <figure>
-                <a href="https://www.inboundcycle.com/blog-de-inbound-marketing/aplicaciones-inteligencia-artificial-2020" target="_blank"><img src="Images/Section/Home/A3/ImagenA33.png" class="ArticleIMG" id="ImagenA33"></a>
-                <figcaption>Article sobre aplicacions de/basades en IA</figcaption>
-            </figure>
-
-            <p><br>Per anar acabant, deixo un link cap a una empresa que n'és bastant curiosa: Utilitza la IA "DFUSION" per detectar, mitjançant escaneig de vídeo, possibles lladres. Per aconseguir-ho utilitza l'anteriorment anomenat "DFUSION", qué és una IA basat en el deep learning.</p>
-
-            <figure>
-                <a href="https://www.davantis.com/es/dfusion" target="_blank"><img src="Images/Section/Home/A3/ImagenA34.png" class="ArticleIMG" id="ImagenA34"></a>
-                <figcaption>Empresa DAVANTIS, utilitza el deep learning com a antirobatori</figcaption>
-            </figure>
-            
-        </article>
-
-        <article id="A1">
-           
-            <h2>IA</h2>
-            <h4>Intel·ligència Artificial</h4>
-
-            <p><br>Des de tenir-lo al mòbil fins a utilitzar-lo en el dia a dia sense adonar-te'n. D'un dia per l'altre, la intel·ligència artificial va deixar de ser un mite d'un futur llunyà a ser una realitat actual. A sobre, a mesura que la IA [IA és l'acrònim de Intel·ligència Artificial] avança, cada cop més sectors i empreses el fan servir, però per què?</p>
-
-            <figure>
-                <a href="https://vasscompany.com/por-que-la-inteligencia-artificial-es-clave-para-tu-empresa/" target="_blank"><img src="Images/Section/Home/ImagenIA.png" class="ArticleIMG" id="ImagenA11"></a>
-                <figcaption>Per què és important la IA per a les empreses?</figcaption>
-            </figure>
-
-            <p><br>Abans de precipitar-nos, per respondre aquesta pregunta primer hem de saber el més bàsic; què és la intel·ligència artificial?</p>
-            
-            <figure>
-                <a href="https://www.iberdrola.com/innovacion/que-es-inteligencia-artificial" target="_blank"><img src="Images/Section/Home/ImagenIAA11.jpg" class="ArticleIMG" id="ImagenA12"></a>
-                <figcaption>Què és la IA?</figcaption>
-            </figure>
-
-            <p><br>Si vols saber la resposta a tots aquests dubtes, simplement <a href="IsmaelMarcosAspectes.html" class="EnlaceIA">fes clic aquí</a> o ves-te'n a l'apartat "Què és la IA?" de la pàgina "Aspectes Básics".</p>
-
-        </article>
-
-        <article id="A2">
-            
-            <h2>Historia</h2>
-            <h4>De la Intel·ligència artificial</h4>
-
-            <p><br>Encara que soni com a un mite, la idea de crear intel·ligència de manera artificial (d'aquí prové el nom) o directament vida a través de diversos mètodes no és nova, doncs diverses vegades la humanitat s'ha qüestionat com aconseguir-ho.</p>
-
-            <figure>
-                <a href="https://tendencias21.levante-emv.com/la-ia-prolongara-la-vida-humana-en-formato-digital_a44850.html" target="_blank"><img src="Images/Section/Home/ImagenCutreA21.jpeg" class="ArticleIMG" id="ImagenA21"></a>
-                <figcaption>Replicar vida artificial - digital actualment</figcaption>
-            </figure>
-
-            <p><br>Això sí, no va ser fins a l'any 300 aC. que, per part d'Aristòtil, es va descriure un conjunt de regles i/o <a class="EnlaceIA" href="https://concepto.de/silogismo/" target="_blank">sil·logismes (mètode de raonament gregorià)</a> estructurats que descriuen part del funcionament del cervell humá i que, si s'executen seguida i estructuradament, produeixen conclusions racionals a partir de les premisses donades.</p>
-
-            <figure>
-                <a href="https://www.alejandradeargos.com/index.php/es/completas/42-filosofos/41830-aristoteles-biografia-pensamiento-y-obras" target="_blank"><img src="Images/Section/Home/ImagenA22.jpg" class="ArticleIMG" id="ImagenA22"></a>
-                <figcaption>Escultura d'Aristòtil</figcaption>
-            </figure>
-
-            <p><br>Per si no ho has entès, bàsicament va donar les bases més básiques del funcionament per al que avui es coneix com a IA, que per a més explicació, és intentar copiar el funcionament del cervell humá per crear-ne una altra de manera artificial.</p>
-
-        </article>
-
+      <article id="A3">
+        <h2>Llocs d'Interés</h2>
+        <h4>Pàgines Externes</h4>
+        <p>
+          <br>Primer de tot, he de suggerir un reportatge bastant bo en el qual t'explica de manera adequada el que és la IA, la seva història, la diferència entre una IA i un programa informàtic, els tipus d'IA més usats, entre altres. <br>A part, comentar que és una de les pàgines que he visitat per extreure informació a prop de la IA, básicament per poder fer aquesta pàgina.
+        </p>
+        <figure>
+          <a href="https://computerhoy.com/reportajes/tecnologia/inteligencia-artificial-469917" target="_blank">
+            <img src="Images/Section/Home/A3/ImagenA31.png" class="ArticleIMG" id="ImagenA31">
+          </a>
+          <figcaption>Reportatge de "Computer Hoy" a prop de la IA</figcaption>
+        </figure>
+        <p>
+          <br>Si vols més com el de abans, recomano llegir la entrada que té la IA a la Viquipèdia, ja que recopila de manera exacta varis successos de la història de la IA, a part de que explica una mica el que és, la regulació, entre altres.
+        </p>
+        <figure>
+          <a href="https://es.wikipedia.org/wiki/Inteligencia_artificial#Enlaces_externos" target="_blank">
+            <img src="Images/Section/Home/A3/ImagenA32.png" class="ArticleIMG" id="ImagenA32">
+          </a>
+          <figcaption>Entrada de la IA en la Viquipèdia</figcaption>
+        </figure>
+        <p>
+          <br>Si vols veure uns quants exemples de IA en programes, et deixo un article que parla sobre això mateix, i que en recomana uns quants. Fins i tot podries instal·lar-te algun, si vols.
+        </p>
+        <figure>
+          <a href="https://www.inboundcycle.com/blog-de-inbound-marketing/aplicaciones-inteligencia-artificial-2020" target="_blank">
+            <img src="Images/Section/Home/A3/ImagenA33.png" class="ArticleIMG" id="ImagenA33">
+          </a>
+          <figcaption>Article sobre aplicacions de/basades en IA</figcaption>
+        </figure>
+        <p>
+          <br>Per anar acabant, deixo un link cap a una empresa que n'és bastant curiosa: Utilitza la IA "DFUSION" per detectar, mitjançant escaneig de vídeo, possibles lladres. Per aconseguir-ho utilitza l'anteriorment anomenat "DFUSION", qué és una IA basat en el deep learning.
+        </p>
+        <figure>
+          <a href="https://www.davantis.com/es/dfusion" target="_blank">
+            <img src="Images/Section/Home/A3/ImagenA34.png" class="ArticleIMG" id="ImagenA34">
+          </a>
+          <figcaption>Empresa DAVANTIS, utilitza el deep learning com a antirobatori</figcaption>
+        </figure>
+      </article>
+      <article id="A1">
+        <h2>IA</h2>
+        <h4>Intel·ligència Artificial</h4>
+        <p>
+          <br>Des de tenir-lo al mòbil fins a utilitzar-lo en el dia a dia sense adonar-te'n. D'un dia per l'altre, la intel·ligència artificial va deixar de ser un mite d'un futur llunyà a ser una realitat actual. A sobre, a mesura que la IA [IA és l'acrònim de Intel·ligència Artificial] avança, cada cop més sectors i empreses el fan servir, però per què?
+        </p>
+        <figure>
+          <a href="https://vasscompany.com/por-que-la-inteligencia-artificial-es-clave-para-tu-empresa/" target="_blank">
+            <img src="Images/Section/Home/ImagenIA.png" class="ArticleIMG" id="ImagenA11">
+          </a>
+          <figcaption>Per què és important la IA per a les empreses?</figcaption>
+        </figure>
+        <p>
+          <br>Abans de precipitar-nos, per respondre aquesta pregunta primer hem de saber el més bàsic; què és la intel·ligència artificial?
+        </p>
+        <figure>
+          <a href="https://www.iberdrola.com/innovacion/que-es-inteligencia-artificial" target="_blank">
+            <img src="Images/Section/Home/ImagenIAA11.jpg" class="ArticleIMG" id="ImagenA12">
+          </a>
+          <figcaption>Què és la IA?</figcaption>
+        </figure>
+        <p>
+          <br>Si vols saber la resposta a tots aquests dubtes, simplement <a href="IsmaelMarcosAspectes.html" class="EnlaceIA">fes clic aquí</a> o ves-te'n a l'apartat "Què és la IA?" de la pàgina "Aspectes Básics".
+        </p>
+      </article>
+      <article id="A2">
+        <h2>Historia</h2>
+        <h4>De la Intel·ligència artificial</h4>
+        <p>
+          <br>Encara que soni com a un mite, la idea de crear intel·ligència de manera artificial (d'aquí prové el nom) o directament vida a través de diversos mètodes no és nova, doncs diverses vegades la humanitat s'ha qüestionat com aconseguir-ho.
+        </p>
+        <figure>
+          <a href="https://tendencias21.levante-emv.com/la-ia-prolongara-la-vida-humana-en-formato-digital_a44850.html" target="_blank">
+            <img src="Images/Section/Home/ImagenCutreA21.jpeg" class="ArticleIMG" id="ImagenA21">
+          </a>
+          <figcaption>Replicar vida artificial - digital actualment</figcaption>
+        </figure>
+        <p>
+          <br>Això sí, no va ser fins a l'any 300 aC. que, per part d'Aristòtil, es va descriure un conjunt de regles i/o <a class="EnlaceIA" href="https://concepto.de/silogismo/" target="_blank">sil·logismes (mètode de raonament gregorià)</a> estructurats que descriuen part del funcionament del cervell humá i que, si s'executen seguida i estructuradament, produeixen conclusions racionals a partir de les premisses donades.
+        </p>
+        <figure>
+          <a href="https://www.alejandradeargos.com/index.php/es/completas/42-filosofos/41830-aristoteles-biografia-pensamiento-y-obras" target="_blank">
+            <img src="Images/Section/Home/ImagenA22.jpg" class="ArticleIMG" id="ImagenA22">
+          </a>
+          <figcaption>Escultura d'Aristòtil</figcaption>
+        </figure>
+        <p>
+          <br>Per si no ho has entès, bàsicament va donar les bases més básiques del funcionament per al que avui es coneix com a IA, que per a més explicació, és intentar copiar el funcionament del cervell humá per crear-ne una altra de manera artificial.
+        </p>
+      </article>
     </section>
-
     <footer id="Pie">
-        <p>@IA Interactive</p> <br>
-        <p>Autor: Ismael Marcos Martínez</p> <br>
-        <div>
-            <img src="Images/Footer/Instagram.png" class="Footerimg" alt="Instagram">
-            <img src="Images/Footer/Facebook.png" class="Footerimg" alt="Facebook">
-            <img src="Images/Footer/Twitter.png" class="Footerimg" alt="Twitter">
-        </div>
+      <p>@IA Interactive</p>
+      <br>
+      <p>Autor: Ismael Marcos Martínez</p>
+      <br>
+      <div>
+        <img src="Images/Footer/Instagram.png" class="Footerimg" alt="Instagram">
+        <img src="Images/Footer/Facebook.png" class="Footerimg" alt="Facebook">
+        <img src="Images/Footer/Twitter.png" class="Footerimg" alt="Twitter">
+      </div>
     </footer>
-
     <script>
+      function MostrarPaginas() {
+        document.getElementById("Lista").style.display = "flex";
+        document.getElementById("Apartado2").style.display = "none";
+        document.getElementById("ApartadoHome").style.display = "none";
+        document.getElementById("ApartadoTipos").style.display = "none";
+        document.getElementById("ApartadoEnquesta").style.display = "none";
+      }
 
-        function MostrarPaginas(){
-            document.getElementById("Lista").style.display = "flex";
-            document.getElementById("Apartado2").style.display = "none";
-            document.getElementById("ApartadoHome").style.display = "none";
-            document.getElementById("ApartadoTipos").style.display = "none";
-            document.getElementById("ApartadoEnquesta").style.display = "none";
-        }
+      function MostrarApartadoHome() {
+        document.getElementById("Lista").style.display = "none";
+        document.getElementById("ApartadoHome").style.display = "flex";
+      }
 
+      function MostrarApartado2() {
+        document.getElementById("Lista").style.display = "none";
+        document.getElementById("SubApartado21").style.display = "none";
+        document.getElementById("SubApartado22").style.display = "none";
+        document.getElementById("Apartado2").style.display = "flex";
+      }
 
-        function MostrarApartadoHome(){
-            document.getElementById("Lista").style.display = "none";
-            document.getElementById("ApartadoHome").style.display = "flex";
-        }
+      function MostrarSubApartado21() {
+        document.getElementById("SubApartado21").style.display = "flex";
+        document.getElementById("Apartado2").style.display = "none";
+      }
 
-        function MostrarApartado2(){
-            document.getElementById("Lista").style.display = "none";
-            document.getElementById("SubApartado21").style.display = "none";
-            document.getElementById("SubApartado22").style.display = "none";
-            document.getElementById("Apartado2").style.display = "flex";
-        }
+      function MostrarSubApartado22() {
+        document.getElementById("SubApartado22").style.display = "flex";
+        document.getElementById("Apartado2").style.display = "none";
+      }
 
-            function MostrarSubApartado21(){
-                document.getElementById("SubApartado21").style.display = "flex";
-                document.getElementById("Apartado2").style.display = "none";
-            }
+      function MostrarTipos() {
+        document.getElementById("Lista").style.display = "none";
+        document.getElementById("ApartadoTipos").style.display = "flex";
+        document.getElementById("SubApartado31").style.display = "none";
+        document.getElementById("SubApartado32").style.display = "none";
+      }
 
-            function MostrarSubApartado22(){
-                document.getElementById("SubApartado22").style.display = "flex";
-                document.getElementById("Apartado2").style.display = "none";
-            }
+      function MostrarEnquesta() {
+        document.getElementById("Lista").style.display = "none";
+        document.getElementById("ApartadoEnquesta").style.display = "flex";
+      }
 
-        function MostrarTipos(){
-            document.getElementById("Lista").style.display = "none";
-            document.getElementById("ApartadoTipos").style.display = "flex";
-            document.getElementById("SubApartado31").style.display = "none";
-            document.getElementById("SubApartado32").style.display = "none";
-            
-        }
+      function MostrarInicioSesion() {
+        document.getElementById("Inicio").style.display = "flex"
+      }
 
-        function MostrarEnquesta(){
-            document.getElementById("Lista").style.display = "none";
-            document.getElementById("ApartadoEnquesta").style.display = "flex";
-        }
-
-
-        function MostrarInicioSesion(){
-            document.getElementById("Inicio").style.display = "flex"
-        }
-
-        function OcultarInicioSesion(){
-            document.getElementById("Inicio").style.display = "none"
-        }
-
-        
-        document.getElementById("Home1").addEventListener("click",()=>{
-            document.getElementById("A1").scrollIntoView();
-        })
-
-        document.getElementById("Home2").addEventListener("click",()=>{
-            document.getElementById("A2").scrollIntoView();
-        })
-
-        document.getElementById("Home3").addEventListener("click",()=>{
-            document.getElementById("A3").scrollIntoView();
-        })
-
+      function OcultarInicioSesion() {
+        document.getElementById("Inicio").style.display = "none"
+      }
+      document.getElementById("Home1").addEventListener("click", () => {
+        document.getElementById("A1").scrollIntoView();
+      })
+      document.getElementById("Home2").addEventListener("click", () => {
+        document.getElementById("A2").scrollIntoView();
+      })
+      document.getElementById("Home3").addEventListener("click", () => {
+        document.getElementById("A3").scrollIntoView();
+      })
     </script>
-</body>
+  </body>
 </html>
