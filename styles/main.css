@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    flex-wrap: nowrap;
     padding: 0px;
     margin: 0px;
 }
@@ -11,28 +10,28 @@ html {
 
 @font-face {
     font-family: 'Neon Led Light';
-    src: url(./Fuentes/NeonLED.otf) format("truetype");
+    src: url('../assets/fonts/NeonLED.otf') format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Library';
-    src: url(./Fuentes/Library.otf) format("truetype");
+    src: url('../assets/fonts/Library.otf') format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Ailerons';
-    src: url(./Fuentes/Ailerons.otf) format("truetype");
+    src: url('../assets/fonts/Ailerons.otf') format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Pro';
-    src: url(./Fuentes/John.otf) format("truetype");
+    src: url('../assets/fonts/John.otf') format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -57,7 +56,7 @@ a {
         color: #ff0000;
         cursor: pointer;
     }
-    
+
     a:active{
         color: rgb(114, 33, 33);
     }
@@ -139,7 +138,7 @@ h5{
 }
 
     @keyframes CargarPagina{
-        0%{left:0px;top: -10%;opacity: 0;} 
+        0%{left:0px;top: -10%;opacity: 0;}
         10%{left:0px;top:95%;bottom:0px}
         12%{left:0px;top:94%;bottom:1%;opacity: 0.3;}
         15%{left:0px;top:95%;bottom:0px;opacity: 1;}
@@ -191,7 +190,7 @@ h5{
             font-size: 25px;
             width: 100%;
         }
-        
+
         .Paginas {
             vertical-align: center;
         }
@@ -205,7 +204,7 @@ h5{
             width: 20px;
             height: 20px;
         }
-            
+
         #Session{
             width: 40px;
             height: 50px;
