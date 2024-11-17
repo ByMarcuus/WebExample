@@ -1,0 +1,61 @@
+#Header {
+    background-image: url(Images/Section/Tipus/FondoSectionTipus.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+    #HedPrinc {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+    }
+
+        #Logo {
+            padding: 100px 0px 50px 0px;
+            text-align: center;
+        }
+
+        #Titulo{
+            padding: 50px 0px 50px 0px;
+        }
+
+        #Mensaje{
+            padding: 0px 0px 50px 0px;
+        }
+
+    #Empty {
+        padding: 5vh 0px;
+    }
+    
+#Principal{
+    background-image: url(Images/Section/Home/ImagenFondoHome.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+}
+
+    #Principal > article{
+        background-color: rgba(0, 0, 0, .7);
+        margin: 20px;
+        padding: 20px;
+
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+        .Form1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            width: 100%;
+        }

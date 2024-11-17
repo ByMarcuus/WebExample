@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <link rel="STYLESHEET" type="text/css" href="IsmaelMarcos.css">
+    <link rel="STYLESHEET" type="text/css" href="IsmaelMarcosEnquesta.css">
+    <meta name="author" content="Ismael Marcos Martínez">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquesta - A6</title>
+</head>
+<body>
+
+    <div id="divtransicioncolor"></div>
+    
+    <div id="divtransicion"></div>
+
+    <header id="Header">
+
+        <nav id="Barra">
+            
+            <ul id="Lista">
+
+                <li class="Paginas">
+                    <a href="IsmaelMarcos.html" target="_self">Home</a>
+                    <input type="image" alt="Mostrar Apartats de Home" src="Images/Header/Flecha.png" id="Home" class="Button" onclick="MostrarApartadoHome();">
+                </li>
+
+                <li class="Paginas">
+                    <a href="IsmaelMarcosAspectes.html">Aspectes Básics</a>
+                    <input type="image" alt="Mostrar Apartats de Aspectes Básics" src="Images/Header/Flecha.png" class="Button" onclick="MostrarApartado2();">
+                </li>
+
+                <li class="Paginas">
+                    <a href="IsmaelMarcosTipus.html">Tipus i zones</a>
+                    <input type="image" alt="Mostrar Apartats de Tipus, zones i altres" src="Images/Header/Flecha.png" class="Button" onclick="MostrarTipos();">
+                </li>
+
+                <li class="Paginas">
+                    <a href="IsmaelMarcosEnquesta.html">Enquesta</a>
+                    <input type="image" alt="Mostrar Apartats de Enquesta" src="Images/Header/Flecha.png" class="Button" onclick="MostrarEnquesta();">
+                </li>
+                
+            </ul>
+
+                <ul id="ApartadoHome" class="Apartados">
+                    <li>
+                        <input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarPaginas();">
+                    </li>
+                    <li><a href="IsmaelMarcos.html">IA - Introducció</a></li>
+                    <li><a href="IsmaelMarcos.html">Història de la IA</a></li>
+                    <li><a href="IsmaelMarcos.html">Llocs d'Interés</a></li>
+                </ul>
+
+                <ul id="Apartado2" class="Apartados">
+                    <li><input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarPaginas();"></li>
+
+                    <li>
+                        <a href="IsmaelMarcosAspectes.html">Què és?</a>
+                        <input type="image" alt="Mostrar Subapartats de Què és?" src="Images/Header/Flecha.png" class="Button" onclick="MostrarSubApartado21()">
+                    </li>
+
+                    <li>
+                        <a href="IsmaelMarcosAspectes.html">Quina importància té?</a>
+                        <input type="image" alt="Mostrar Subapartats de Quina importància té?" src="Images/Header/Flecha.png" class="Button" onclick="MostrarSubApartado22()">
+                    </li>
+
+                </ul>
+
+                    <ul id="SubApartado21" class="Apartados">
+                        <li><input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarApartado2();"></li>
+
+                        <li>
+                            <a href="IsmaelMarcosAspectes.html">Què és la IA?</a>
+                        </li>
+                    </ul>
+
+                    <ul id="SubApartado22" class="Apartados">
+                        <li><input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarApartado2();"></li>
+
+                        <li>
+                            <a href="IsmaelMarcosAspectes.html">Proposta de regulació de la UE</a>
+                        </li>
+                    </ul>
+
+                <ul id="ApartadoTipos" class="Apartados">
+                    <li><input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarPaginas();"></li>
+
+                    <li>
+                        <a href="IsmaelMarcosTipus.html">Tipus de IA</a>
+                    </li>
+
+                    <li>
+                        <a href="IsmaelMarcosTipus.html">Sectors en els que s'aplica</a>
+                    </li>
+
+                </ul>
+
+                <ul id="ApartadoEnquesta" class="Apartados">
+                    <li><input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarPaginas();"></li>
+                    <li><a id="Enquesta1">Satisfacció del client</a></li>
+                </ul>
+
+            <input type="image" alt="Iniciar sessió" src="Images/Header/Login.png" id="Session" onclick="MostrarInicioSesion();">
+
+        </nav>
+
+        <div>
+            <form action="mailto:ismael.marcos@iescasablancas.cat" method="post" enctype="text/plain" id="Inicio">
+
+                <img src="Images/Header/Cerrar.png" alt="Tancar" id="Cerrar" onclick="OcultarInicioSesion();">
+
+                <div>
+
+                    <label for="camp">Usuari: </label>
+                    <input name="Usuari" id="camp" type="text" size="15" maxlength="25" />
+
+                </div>
+
+                <div>
+
+                    <label for="pass">Contrasenya: </label>
+                    <input name="Contrasenya" type="password" id="pass" size="15" maxlength="20" />
+
+                </div>
+
+                <input type="submit" value="Iniciar sessió"/>
+            </form>
+        </div>
+
+        <div id="HedPrinc">
+
+            <div id="Logo">
+                <a href="IsmaelMarcos.html"><img src="Images/Header/Logo.png" id="LogoIMG" alt="Logo"></a>
+            </div>
+
+            <div id="Centro">
+
+                <div id="Titulo">
+
+                    <h1>
+                        Enquesta
+                    </h1>
+
+                </div> 
+
+                <div id="Mensaje">
+
+                    <h3>
+                        Internauta, et trobes a la pàgina "Enquesta".
+                    </h3>
+
+                </div>
+
+            </div>
+
+            <div id="Empty"></div>
+
+        </div>
+
+        <div id="HaciaAbajo">
+            <img src="Images/Header/FlechaAbajo.png" alt="Vés cap a baix" id="FlechaAbajo">
+        </div>
+
+    </header>
+
+    <section id="Principal">
+
+        <article id="ArticleEnquesta">
+            <form action="mailto:ismael.marcos@iescasablancas.cat" method="post" enctype="text/plain">
+
+                <h2>Enquesta</h2>
+                <h4>Satisfacció del client</h4>
+
+                <h5><br>Quant t'ha agradat?</h5>
+
+                <br>
+                <div class="Form1">
+                    <input name="Agradat" id="Check1" type="radio" value="1"/>
+                    <label for="Check1">1</label>
+                        
+                        <br>
+
+                    <input name="Agradat" id="Check2" type="radio" value="2"/>
+                    <label for="Check2">2</label>
+
+                        <br>
+
+                    <input name="Agradat" id="Check3" type="radio" value="3"/>
+                    <label for="Check3">3</label>
+                        
+                        <br>
+
+                    <input name="Agradat" id="Check4" type="radio" value="4"/>
+                    <label for="Check4">4</label>
+
+                        <br>
+
+                    <input name="Agradat" id="Check5" type="radio" value="5"/>
+                    <label for="Check5">5</label>
+                </div>
+
+                <h5><br>T'agrada el estil de la pàgina?</h5>
+
+                <br>
+                <div class="Form1">
+                    <input name="Estil" id="CheckEstil1" type="radio" value="1"/>
+                    <label for="CheckEstil1">1</label>
+                        
+                        <br>
+
+                    <input name="Estil" id="CheckEstil2" type="radio" value="2"/>
+                    <label for="CheckEstil2">2</label>
+
+                        <br>
+
+                    <input name="Estil" id="CheckEstil3" type="radio" value="3"/>
+                    <label for="CheckEstil3">3</label>
+                        
+                        <br>
+
+                    <input name="Estil" id="CheckEstil4" type="radio" value="4"/>
+                    <label for="CheckEstil4">4</label>
+
+                        <br>
+
+                    <input name="Estil" id="CheckEstil5" type="radio" value="5"/>
+                    <label for="CheckEstil5">5</label>
+                </div>
+
+                <h5><br>Que t'ha paregut el contingut?</h5>
+
+                <br>
+                <div class="Form1">
+                    <input name="Contingut" id="CheckContingut1" type="radio" value="1"/>
+                    <label for="CheckContingut1">1</label>
+                        
+                        <br>
+
+                    <input name="Contingut" id="CheckContingut2" type="radio" value="2"/>
+                    <label for="CheckContingut2">2</label>
+
+                        <br>
+
+                    <input name="Contingut" id="CheckContingut3" type="radio" value="3"/>
+                    <label for="CheckContingut3">3</label>
+                        
+                        <br>
+
+                    <input name="Contingut" id="CheckContingut4" type="radio" value="4"/>
+                    <label for="CheckContingut4">4</label>
+
+                        <br>
+
+                    <input name="Contingut" id="CheckContingut5" type="radio" value="5"/>
+                    <label for="CheckContingut5">5</label>
+                </div>
+
+                <h5><br>Comentaris: </h5>
+
+                <br>
+                <input name="Per què?" id="Text1" type="text" placeholder="Escriu els comentaris que tinguis" size="50"/>
+                <br><br>
+                <input type="submit" value="Enviar" />
+            </form>
+
+        </article>
+
+    </section>
+
+    <footer id="Pie">
+        <p>@IA Interactive</p> <br>
+        <p>Autor: Ismael Marcos Martínez</p> <br>
+        <div>
+            <img src="Images/Footer/Instagram.png" class="Footerimg" alt="Instagram">
+            <img src="Images/Footer/Facebook.png" class="Footerimg" alt="Facebook">
+            <img src="Images/Footer/Twitter.png" class="Footerimg" alt="Twitter">
+        </div>
+    </footer>
+
+    <script>
+
+        function MostrarPaginas(){
+            document.getElementById("Lista").style.display = "flex";
+            document.getElementById("Apartado2").style.display = "none";
+            document.getElementById("ApartadoHome").style.display = "none";
+            document.getElementById("ApartadoTipos").style.display = "none";
+            document.getElementById("ApartadoEnquesta").style.display = "none";
+        }
+
+
+        function MostrarApartadoHome(){
+            document.getElementById("Lista").style.display = "none";
+            document.getElementById("ApartadoHome").style.display = "flex";
+        }
+
+        function MostrarApartado2(){
+            document.getElementById("Lista").style.display = "none";
+            document.getElementById("SubApartado21").style.display = "none";
+            document.getElementById("SubApartado22").style.display = "none";
+            document.getElementById("Apartado2").style.display = "flex";
+        }
+
+            function MostrarSubApartado21(){
+                document.getElementById("SubApartado21").style.display = "flex";
+                document.getElementById("Apartado2").style.display = "none";
+            }
+
+            function MostrarSubApartado22(){
+                document.getElementById("SubApartado22").style.display = "flex";
+                document.getElementById("Apartado2").style.display = "none";
+            }
+
+        function MostrarTipos(){
+            document.getElementById("Lista").style.display = "none";
+            document.getElementById("ApartadoTipos").style.display = "flex";
+            document.getElementById("SubApartado31").style.display = "none";
+            document.getElementById("SubApartado32").style.display = "none";
+            
+        }
+
+        function MostrarEnquesta(){
+            document.getElementById("Lista").style.display = "none";
+            document.getElementById("ApartadoEnquesta").style.display = "flex";
+        }
+
+
+        function MostrarInicioSesion(){
+            document.getElementById("Inicio").style.display = "flex"
+        }
+
+        function OcultarInicioSesion(){
+            document.getElementById("Inicio").style.display = "none"
+        }
+
+        
+        document.getElementById("Enquesta1").addEventListener("click",()=>{
+            document.getElementById("ArticleEnquesta").scrollIntoView();
+        })
+
+    </script>
+</body>
+</html>

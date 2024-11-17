@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <link rel="STYLESHEET" type="text/css" href="Ismael Marcos.css">
+    <meta name="author" content="Ismael Marcos Martínez">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 6</title>
+</head>
+<body>
+    <header id="Header">
+        <nav id="Barra">
+
+            <ul id="Lista">
+
+                <li class="Paginas">
+                    <a href="Ismael Marcos.html" target="_self">Home</a>
+                    <input type="image" src="Images/Header/Flecha.png" id="Home" class="Button" alt="Veure apartats de Home" onclick="MostrarApartadoHome();">
+                </li>
+
+                <li class="Paginas">
+                    <a href="#">Insertar pàgina 2</a>
+                    <input type="image" src="Images/Header/Flecha.png" class="Button" alt="Veure apartats de pàgina 2" onclick="MostrarApartado2();">
+                </li>
+
+                <li class="Paginas">
+                    <a href="#">Insertar pàgina 3</a>
+
+                    <ul>
+                        <li>
+                            <a>Insertat Apartado</a>
+                        
+                            <ul>
+                                <li><a>Insertar Subapartado</a></li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="Paginas">
+                    <a href="#">Enquesta</a>
+                    <input type="image" src="Images/Header/Flecha.png" class="Button" onclick="MostrarEnquesta();">
+                </li>
+                
+            </ul>
+
+            <ul id="ApartadoHome">
+                <li>
+                    <input type="image" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarPaginas();">
+                </li>
+                <li><a href="#A1">IA - Introducció</a></li>
+                <li><a href="#A2">Història de la IA</a></li>
+                <li><a href="#A3">Llocs d'Interés</a></li>
+            </ul>
+
+            <ul id="Apartado2">
+                <li><input type="image" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarPaginas();"></li>
+                <li>
+                    <a>Insertar Apartado</a>
+                    <input type="image" src="Images/Header/Flecha.png" class="Button" onclick="MostrarSubApartado21()">
+                </li>
+            </ul>
+
+            <ul id="SubApartado21">
+                <li><input type="image" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarApartado2();"></li>
+                <li><a>Insertar Subapartado</a></li>
+            </ul>
+
+            <ul id="ApartadoEnquesta">
+                <input type="image" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarPaginas();">
+                <li><a>Enquesta sobre la IA</a></li>
+                <li><a>Enquesta sobre la satisfacció al client</a></li>
+            </ul>
+
+            <img src="Images/Header/Login.png" id="Session">
+
+            <div id="Bloque">
+
+                <div>
+                    <label for="camp">Usuari: </label>
+                    <input name="Usuari" type="text" id="camp" size="10" maxlength="20" />
+                </div>
+        
+                <div>
+                    <label for="pass">Contrasenya: </label>
+                    <input name="Contrasenya" type="password" id="pass" size="10" maxlength="20"/>
+                </div>
+            </div>
+
+        </nav>
+
+        <div id="HedPrinc">
+
+            <div id="Logo">
+                <a href="Ismael Marcos.html"><img src="Images/Header/Logo.png"></a>
+            </div>
+
+            <div id="Centro">
+
+                <div id="Titulo">
+
+                    <h1>
+                        Intel·ligència Artificial
+                    </h1>
+
+                </div> 
+
+                <div id="Mensaje">
+
+                    <h3>
+                        Bon dia, internauta, et trobes a la pàgina principal.
+                    </h3>
+
+                </div>
+
+            </div>
+
+            <div id="Empty"></div>
+
+        </div>
+
+        <div id="HaciaAbajo">
+            <img src="Images/Header/FlechaAbajo.png" alt="Vés cap a baix" id="FlechaAbajo">
+        </div>
+
+    </header>
+
+    <section id="Principal">
+
+        <article id="A3">
+
+            <h2>Llocs d'Interés</h2>
+            <h4>Pàgines Externes</h4>
+            
+            <p><br>Primer de tot, he de suggerir un reportatge bastant bo en el qual t'explica de manera adequada el que és la IA, la seva història, la diferència entre una IA i un programa informàtic, els tipus d'IA més usats, entre altres.
+            <br>A part, comentar que és una de les pàgines que he visitat per extreure informació a prop de la IA, básicament per poder fer aquesta pàgina.</p>
+
+            <figure>
+                <a href="https://computerhoy.com/reportajes/tecnologia/inteligencia-artificial-469917" target="_blank"><img src="Images/Section/Home/A3/ImagenA31.png" class="ArticleIMG" id="ImagenA31"></a>
+                <figcaption>Reportatge de "Computer Hoy" a prop de la IA</figcaption>
+            </figure>
+
+            <p><br>Si vols més com el de abans, recomano llegir la entrada que té la IA a la Viquipèdia, ja que recopila de manera exacta varis successos de la història de la IA, a part de que explica una mica el que és, la regulació, entre altres.</p>
+
+            <figure>
+                <a href="https://es.wikipedia.org/wiki/Inteligencia_artificial#Enlaces_externos" target="_blank"><img src="Images/Section/Home/A3/ImagenA32.png" class="ArticleIMG" id="ImagenA32"></a>
+                <figcaption>Entrada de la IA en la Viquipèdia</figcaption>
+            </figure>
+
+            <p><br>Si vols veure uns quants exemples de IA en programes, et deixo un article que parla sobre això mateix, i que en recomana uns quants. Fins i tot podries instal·lar-te algun, si vols.</p>
+
+            <figure>
+                <a href="https://www.inboundcycle.com/blog-de-inbound-marketing/aplicaciones-inteligencia-artificial-2020" target="_blank"><img src="Images/Section/Home/A3/ImagenA33.png" class="ArticleIMG" id="ImagenA33"></a>
+                <figcaption>Article sobre aplicacions de/basades en IA</figcaption>
+            </figure>
+
+            <p><br>Per anar acabant, deixo un link cap a una empresa que n'és bastant curiosa: Utilitza la IA "DFUSION" per detectar, mitjançant escaneig de vídeo, possibles lladres. Per aconseguir-ho utilitza l'anteriorment anomenat "DFUSION", qué és una IA basat en el deep learning.</p>
+
+            <figure>
+                <a href="https://www.davantis.com/es/dfusion" target="_blank"><img src="Images/Section/Home/A3/ImagenA34.png" class="ArticleIMG" id="ImagenA34"></a>
+                <figcaption>Empresa DAVANTIS, utilitza el deep learning com a antirobatori</figcaption>
+            </figure>
+            
+        </article>
+
+        <article id="A1">
+           
+            <h2 id="Prueba">IA</h2>
+            <h4>Intel·ligència Artificial</h4>
+
+            <p><br>Des de tenir-lo al mòbil fins a utilitzar-lo en el dia a dia sense adonar-te'n. D'un dia per l'altre, la intel·ligència artificial va deixar de ser un mite d'un futur llunyà a ser una realitat actual. A sobre, a mesura que la IA [IA és l'acrònim de Intel·ligència Artificial] avança, cada cop més sectors i empreses el fan servir, però per què?</p>
+
+            <figure>
+                <a href="https://vasscompany.com/por-que-la-inteligencia-artificial-es-clave-para-tu-empresa/" target="_blank"><img src="Images/Section/Home/ImagenIA.png" class="ArticleIMG" id="ImagenA11"></a>
+                <figcaption>Per què és important la IA per a les empreses?</figcaption>
+            </figure>
+
+            <p><br>Abans de precipitar-nos, per respondre aquesta pregunta primer hem de saber el més bàsic; què és la intel·ligència artificial?</p>
+            
+            <figure>
+                <a href="https://www.iberdrola.com/innovacion/que-es-inteligencia-artificial" target="_blank"><img src="Images/Section/Home/ImagenIAA11.jpg" class="ArticleIMG" id="ImagenA12"></a>
+                <figcaption>Què és la IA?</figcaption>
+            </figure>
+
+            <p><br>La intel·ligència artificial és l'habilitat d'una màquina de presentar les mateixes capacitats que els éssers humans, com el raonament, l'aprenentatge, la creativitat i la capacitat de planejar.</p>
+
+            <p><br>Si vols saber la resposta a tots aquests dubtes, simplement <a href="" class="EnlaceIA">fes clic aquí</a> o ves-te'n a l'apartat "Què és la IA?" de la Pagina2</p>
+
+        </article>
+
+        <article id="A2">
+            
+            <h2>Historia</h2>
+            <h4>De la Intel·ligència artificial</h4>
+
+            <p><br>Encara que soni com a un mite, la idea de crear intel·ligència de manera artificial (d'aquí prové el nom) o directament vida a través de diversos mètodes no és nova, doncs diverses vegades la humanitat s'ha qüestionat com aconseguir-ho.</p>
+
+            <figure>
+                <a href="#" target="_blank"><img src="Images/Section/Home/ImagenCutreA21.jpeg" class="ArticleIMG" id="ImagenA21"></a>
+                <figcaption>Cosas</figcaption>
+            </figure>
+
+            <p><br>Això sí, no va ser fins a l'any 300 aC. que, per part d'Aristòtil, es va descriure un conjunt de regles i/o <a class="EnlaceIA">sil·logismes (mètode de raonament gregorià)</a> estructurats que descriuen part del funcionament del cervell humá i que, si s'executen seguida i estructuradament, produeixen conclusions racionals a partir de les premisses donades.</p>
+
+            <figure>
+                <a href="https://www.alejandradeargos.com/index.php/es/completas/42-filosofos/41830-aristoteles-biografia-pensamiento-y-obras" target="_blank"><img src="Images/Section/Home/ImagenA22.jpg" class="ArticleIMG" id="ImagenA22"></a>
+                <figcaption>Escultura d'Aristòtil</figcaption>
+            </figure>
+
+            <p><br>Per si no ho has entès, bàsicament va donar les bases més básiques del funcionament per al que avui es coneix com a IA, que per a més explicació, és intentar copiar el funcionament del cervell humá per crear-ne una altra de manera artificial.</p>
+
+            <p><br>Si vols saber més coses a prop de la història de la IA, <a class="EnlaceIA">fes clic aquí</a> o ves-te'n l'apartat Història de la Pagina2</p>
+
+        </article>
+
+    </section>
+
+    <footer id="Pie">
+        <p>@IA Interactive</p> <br>
+        <p>Autor: Ismael Marcos Martínez</p> <br>
+        <div>
+            <img src="Images/Footer/Instagram.png" class="Footerimg" alt="Instagram">
+            <img src="Images/Footer/Facebook.png" class="Footerimg" alt="Facebook">
+            <img src="Images/Footer/Twitter.png" class="Footerimg" alt="Twitter">
+        </div>
+    </footer>
+
+
+    <script>
+
+        function MostrarPaginas(){
+            document.getElementById("Lista").style.display = "flex";
+            document.getElementById("Apartado2").style.display = "none";
+            document.getElementById("ApartadoHome").style.display = "none";
+            document.getElementById("ApartadoEnquesta").style.display = "none";
+        }
+
+        function MostrarApartadoHome(){
+            document.getElementById("Lista").style.display = "none";
+            document.getElementById("ApartadoHome").style.display = "flex";
+        }
+
+        function MostrarApartado2(){
+            document.getElementById("Lista").style.display = "none";
+            document.getElementById("SubApartado21").style.display = "none";
+            document.getElementById("Apartado2").style.display = "flex";
+        }
+
+        function MostrarSubApartado21(){
+            document.getElementById("SubApartado21").style.display = "flex";
+            document.getElementById("Apartado2").style.display = "none";
+        }
+
+        function MostrarEnquesta(){
+            document.getElementById("Lista").style.display = "none";
+            document.getElementById("ApartadoEnquesta").style.display = "flex";
+        }
+
+    </script>
+</body>
+</html>

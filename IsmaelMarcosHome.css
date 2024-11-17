@@ -1,0 +1,145 @@
+#Header {
+    background-image: url(Images/Header/HeaderHome.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+    #HedPrinc {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+    }
+
+        #Logo {
+            padding: 100px 0px 0px 0px;
+            text-align: center;
+        }
+
+        #LogoIMG {
+            width: 10%;
+            transition: all 0.3s ease-in;
+            filter: drop-shadow(2px 2px 0 rgb(175, 175, 175))
+        }
+
+            #LogoIMG:hover {
+                filter: drop-shadow(13px 10px 1px rgb(75, 75, 75)) invert(90%);
+            }
+
+            #Title {
+                animation: Entrada 2s linear 1;
+            }
+
+        #Centro > * {
+            padding: 5px;
+        }
+
+    #Empty {
+        padding: 3.5vw 0px;
+    }
+
+#Principal {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    background-image: url(Images/Section/Home/ImagenFondoHome.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    top: 50px;
+}
+
+#Principal > * {
+    padding: 20px;
+    width: 32%;
+    height: 100%;
+}
+
+    #A1 {
+        margin: 20px 0px;
+        background-color: rgba(0, 0, 0, .7);
+        text-align: justify;
+    }
+
+        #ImagenA12{
+            width: 50%;
+        }
+
+        #ImagenA11, #ImagenA12 {
+            transition:all .5s ease-in-out;
+        }
+
+        #ImagenA11:hover, #ImagenA12:hover{
+            transform:scale(1.25);
+        }
+
+    #A2 {
+        margin: 400px 0px 0px 0px;
+        background-color: rgba(0, 0, 0, .7);
+        text-align: left;
+    }
+
+        #ImagenA21, #ImagenA11, #ImagenA31, #ImagenA32, #ImagenA33, #ImagenA34{
+            width: 96%;
+        }
+
+        #ImagenA22{
+            width: 50%;
+        }
+
+        #ImagenA21, #ImagenA22{
+            filter: grayscale(100%);
+            transition:all .5s ease-in-out;
+        }
+
+            #ImagenA21:hover, #ImagenA22:hover{
+                filter: saturate(180%);
+                filter: grayscale(0%);
+                transform:scale(0.9);
+            }
+
+    #A3 {
+        margin: 800px 0px 20px 0px;
+        background-color: rgba(0, 0, 0, .7);
+        text-align: right;
+    }
+
+        #A3 > figure a img{
+            transition:all .5s ease-in-out;
+        }
+
+            #A3 > figure a img:hover{
+                filter: opacity(.5);
+                transform:scale(0.9);
+            }
+
+    .ArticleIMG{
+        width: 100%;
+        height: 100%;
+        margin: 10px 0px;
+        z-index: 1;
+        border-radius: 3px;
+    }
+
+    figure > *{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    figure {
+        background-color: rgb(26, 26, 26);
+        border-radius: 5px;
+    }
+
+    figcaption {
+        background-color: black;
+        border-radius: 5px;
+        color: white;
+        font-family: 'Pro';
+        font-style: italic;
+        padding: 5px;
+    }

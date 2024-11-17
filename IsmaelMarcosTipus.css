@@ -1,0 +1,188 @@
+#Header {
+    background-image: url(Images/Header/FondoHeaderTipus.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+    #HedPrinc {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+    }
+
+        #Logo {
+            padding: 100px 0px 50px 0px;
+            text-align: center;
+        }
+
+        #Titulo{
+            padding: 50px 0px 50px 0px;
+        }
+
+        #Mensaje{
+            padding: 0px 0px 50px 0px;
+        }
+
+    #Empty {
+        padding: 5vh 0px;
+    }
+
+#Principal{
+    background-image: url(Images/Section/Tipus/FondoSectionTipus.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+}
+
+    #Article1T{
+        width: 70%;
+        height: 100%;
+        margin: 20px 10px 0px 10px;
+
+        background-color: rgba(0, 0, 0, .5);
+        padding: 20px;
+
+        text-align: right;
+    }
+
+        #A11IMG{
+            background-image: url(Images/Section/Tipus/A1/A11.jpg);
+        }
+
+        #A12IMG{
+            background-image: url(Images/Section/Tipus/A1/A12.jpg);
+        }
+
+        #A13IMG{
+            background-image: url(Images/Section/Tipus/A1/A13.png);
+        }
+
+        #A14IMG{
+            background-image: url(Images/Section/Tipus/A1/A14.png);
+        }
+
+    #Article2T{
+        width: 70%;
+        height: 100%;
+
+        background-color: rgba(0, 0, 0, .5);
+        padding: 20px;
+
+        margin: 20px 10px 20px 10px;
+    }
+
+        #ContainerArticle2T{
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+
+        .ContainerIMG{
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            justify-content: center;
+            justify-content: center;
+        }
+    
+        figure{
+            overflow: hidden;
+            border-radius: 5px;
+            padding: 5px;
+    
+            width: 75%;
+            height: 100%;
+    
+            background-color: rgba(0, 0, 0, .5);
+            right: 0px;
+        }
+    
+            .divIMG{
+                background-repeat: no-repeat;
+                background-size: cover;
+    
+                width: 100%;
+                height: 25vw;
+    
+                padding: 30px;
+    
+                transition: all 0.5s linear;
+    
+                overflow: hidden;
+            }
+    
+                .divIMG:hover {
+                    -webkit-transform:scale(1.25);transform:scale(1.25);
+                }
+    
+                    #A21IMG{
+                        background-image: url(Images/Section/Tipus/A2/A21.jpg);
+                    }
+
+                    #A22IMG{
+                        background-image: url(Images/Section/Tipus/A2/A22.jpg);
+                    }
+
+                    #A23IMG{
+                        background-image: url(Images/Section/Tipus/A2/A23.jpeg);
+                    }
+
+                    #A24IMG{
+                        background-image: url(Images/Section/Tipus/A2/A24.jpg);
+                    }
+
+                    #A25IMG{
+                        background-image: url(Images/Section/Tipus/A2/A25.jpg);
+                    }
+
+                    #A26IMG{
+                        background-image: url(Images/Section/Tipus/A2/A26.jpg);
+                    }
+
+                    #A27IMG{
+                        background-image: url(Images/Section/Tipus/A2/A27.jpg);
+                    }
+    
+            .Ocultar{
+                border: black 2px solid;
+                width: 100%;
+                height: 100%;
+    
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: nowrap;
+    
+                text-align: center;
+    
+                opacity: 1;
+                transition: all 0.5s linear;
+            }
+    
+                .divIMG:hover .Ocultar{
+                    opacity: 0;
+                }
+    
+                .divIMG:hover .Ocultar h2{
+                    font-size: 2.5vw;
+                    position: absolute;
+                }
+    
+            .TitleIMG{
+                background-color: rgba(0, 0, 0, .5);
+                padding: 10px;
+                border-radius: 5px;
+                color: white;
+                transition: all 0.5s ease-in;
+            }   
