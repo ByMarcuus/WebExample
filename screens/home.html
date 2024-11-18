@@ -14,102 +14,47 @@
     <link rel="stylesheet" type="text/css" href="../styles/main.css">
     <link rel="stylesheet" type="text/css" href="../styles/home.css">
 
+    <script src="../scripts/main.js" defer></script>
+
     <title>Home</title>
   </head>
   <body>
-    <div id="divtransicioncolor"></div>
-    <div id="divtransicion"></div>
-
-    <header id="Header">
-      <nav id="Barra">
-        <ul id="Lista">
-          <li class="Paginas">
-            <a href="IsmaelMarcos.html" target="_self">Home</a>
-            <input type="image" alt="Mostrar Apartats de Home" src="Images/Header/Flecha.png" id="Home" class="Button" onclick="MostrarApartadoHome();">
+    <header>
+      <nav role="navigation" aria-label="main">
+        <ul>
+          <li>
+            <a role="link" href="./home.html" tabindex="0">
+              Home
+            </a>
+            <button name="Subpàgines de Home" type="button" role="button" tabindex="0" disabled>
+              More options...
+            </button>
           </li>
-          <li class="Paginas">
-            <a href="IsmaelMarcosAspectes.html">Aspectes Básics</a>
-            <input type="image" alt="Mostrar Apartats de Aspectes Básics" src="Images/Header/Flecha.png" class="Button" onclick="MostrarApartado2();">
+          <li>
+            <a role="link" href="./aspects.html" tabindex="0">
+              Aspectes básics
+            </a>
+            <button name="Subpàgines de Aspectes Básics" type="button" role="button" tabindex="0" disabled>
+              More options...
+            </button>
           </li>
-          <li class="Paginas">
-            <a href="IsmaelMarcosTipus.html">Tipus i zones</a>
-            <input type="image" alt="Mostrar Apartats de Tipus, zones i altres" src="Images/Header/Flecha.png" class="Button" onclick="MostrarTipos();">
+          <li>
+            <a role="link" href="./types.html" tabindex="0">
+              Tipus i zones
+            </a>
+            <button name="Subpàgines de Tipus i Zones" type="button" role="button" tabindex="0" disabled>
+              More options...
+            </button>
           </li>
-          <li class="Paginas">
-            <a href="IsmaelMarcosEnquesta.html">Enquesta</a>
-            <input type="image" alt="Mostrar Apartats de Enquesta" src="Images/Header/Flecha.png" class="Button" onclick="MostrarEnquesta();">
+          <li>
+            <a role="link" href="./surveyform.html" tabindex="0">
+              Enquesta
+            </a>
+            <button name="Subpàgines de Enquesta" type="button" role="button" tabindex="0" disabled>
+              More options...
+            </button>
           </li>
         </ul>
-
-        <ul id="ApartadoHome" class="Apartados">
-          <li>
-            <input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarPaginas();">
-          </li>
-          <li>
-            <a id="Home1">IA - Introducció</a>
-          </li>
-          <li>
-            <a id="Home2">Història de la IA</a>
-          </li>
-          <li>
-            <a id="Home3">Llocs d'Interés</a>
-          </li>
-        </ul>
-
-        <ul id="Apartado2" class="Apartados">
-          <li>
-            <input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarPaginas();">
-          </li>
-          <li>
-            <a href="IsmaelMarcosAspectes.html">Què és?</a>
-            <input type="image" alt="Mostrar Subapartats de Què és?" src="Images/Header/Flecha.png" class="Button" onclick="MostrarSubApartado21()">
-          </li>
-          <li>
-            <a href="IsmaelMarcosAspectes.html">Quina importància té?</a>
-            <input type="image" alt="Mostrar Subapartats de Quina importància té?" src="Images/Header/Flecha.png" class="Button" onclick="MostrarSubApartado22()">
-          </li>
-        </ul>
-
-        <ul id="SubApartado21" class="Apartados">
-          <li>
-            <input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarApartado2();">
-          </li>
-          <li>
-            <a href="IsmaelMarcosAspectes.html">Què és la IA?</a>
-          </li>
-        </ul>
-
-        <ul id="SubApartado22" class="Apartados">
-          <li>
-            <input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarApartado2();">
-          </li>
-          <li>
-            <a href="IsmaelMarcosAspectes.html">Proposta de regulació de la UE</a>
-          </li>
-        </ul>
-
-        <ul id="ApartadoTipos" class="Apartados">
-          <li>
-            <input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarPaginas();">
-          </li>
-          <li>
-            <a href="IsmaelMarcosTipus.html">Tipus de IA</a>
-          </li>
-          <li>
-            <a href="IsmaelMarcosTipus.html">Sectors en els que s'aplica</a>
-          </li>
-        </ul>
-
-        <ul id="ApartadoEnquesta" class="Apartados">
-          <li>
-            <input type="image" alt="Tornar enrere" src="Images/Header/Flecha2.png" class="Atras" onclick="MostrarPaginas();">
-          </li>
-          <li>
-            <a href="IsmaelMarcosEnquesta.html">Satisfacció del client</a>
-          </li>
-        </ul>
-
-        <input type="image" alt="Iniciar sessió" src="Images/Header/Login.png" id="Session" onclick="MostrarInicioSesion();">
       </nav>
 
       <div>

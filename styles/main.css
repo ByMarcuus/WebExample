@@ -9,20 +9,6 @@ html {
 }
 
 @font-face {
-    font-family: 'Neon Led Light';
-    src: url('../assets/fonts/NeonLED.otf') format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Library';
-    src: url('../assets/fonts/Library.otf') format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'Ailerons';
     src: url('../assets/fonts/Ailerons.otf') format("truetype");
     font-weight: normal;
@@ -30,8 +16,8 @@ html {
 }
 
 @font-face {
-    font-family: 'Pro';
-    src: url('../assets/fonts/John.otf') format("truetype");
+    font-family: 'Neon Led Light';
+    src: url('../assets/fonts/NeonLED.otf') format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -158,9 +144,25 @@ h5{
         background-color: rgba(54, 54, 54, .6);
     }
 
-        nav{
-            position: fixed;
-            z-index: 2;
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            width: 100%;
+        }
+
+        nav > ul {
+            display: flex;
+            flex-direction: row;
+
+
+            width: 100%;
+        }
+
+        nav > ul > li::marker {
+            content: '';
         }
 
         .Paginas ul > * {
