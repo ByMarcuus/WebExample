@@ -1,4 +1,3 @@
-<!-- To validate HTML, please use: https://validator.w3.org/nu/#textarea -->
 <!DOCTYPE html>
 <html lang="ca">
   <head>
@@ -19,79 +18,33 @@
     <title>Home</title>
   </head>
   <body>
+    <nav aria-label="main">
+      <ul>
+        <li id="home-navigation">
+          <a href="./home.html" tabindex="0">Home</a>
+          <button name="Subpàgines de Home" type="button" tabindex="0" disabled>asd</button>
+        </li>
+        <li id="aspects-navigation">
+          <a href="./aspects.html" tabindex="0">Aspectes básics</a>
+          <button name="Subpàgines de Aspectes Básics" role="button" type="button" tabindex="0" disabled></button>
+        </li>
+        <li id="types-navigation">
+          <a href="./types.html" tabindex="0">Tipus i zones</a>
+          <button name="Subpàgines de Tipus i Zones" role="button" type="button" tabindex="0" disabled></button>
+        </li>
+        <li id="survey-navigation">
+          <a href="./surveyform.html" tabindex="0">Enquesta</a>
+          <button name="Subpàgines de Enquesta" role="button" type="button" tabindex="0" disabled></button>
+        </li>
+      </ul>
+    </nav>
+
     <header>
-      <nav role="navigation" aria-label="main">
-        <ul>
-          <li>
-            <a role="link" href="./home.html" tabindex="0">
-              Home
-            </a>
-            <button name="Subpàgines de Home" type="button" role="button" tabindex="0" disabled>
-              More options...
-            </button>
-          </li>
-          <li>
-            <a role="link" href="./aspects.html" tabindex="0">
-              Aspectes básics
-            </a>
-            <button name="Subpàgines de Aspectes Básics" type="button" role="button" tabindex="0" disabled>
-              More options...
-            </button>
-          </li>
-          <li>
-            <a role="link" href="./types.html" tabindex="0">
-              Tipus i zones
-            </a>
-            <button name="Subpàgines de Tipus i Zones" type="button" role="button" tabindex="0" disabled>
-              More options...
-            </button>
-          </li>
-          <li>
-            <a role="link" href="./surveyform.html" tabindex="0">
-              Enquesta
-            </a>
-            <button name="Subpàgines de Enquesta" type="button" role="button" tabindex="0" disabled>
-              More options...
-            </button>
-          </li>
-        </ul>
-      </nav>
+      <img src="Images/Header/Logo.png" id="LogoIMG" alt="Logo">
+      <h1>Intel·ligència Artificial</h1>
+      <h3>Bon dia, internauta, et trobes a la pàgina principal.</h3>
 
-      <div>
-        <form action="mailto:ismael.marcos@iescasablancas.cat" method="post" enctype="text/plain" id="Inicio">
-          <img src="Images/Header/Cerrar.png" alt="Tancar" id="Cerrar" onclick="OcultarInicioSesion();">
-          <div>
-            <label for="camp">Usuari: </label>
-            <input name="Usuari" id="camp" type="text" size="15" maxlength="25" />
-          </div>
-          <div>
-            <label for="pass">Contrasenya: </label>
-            <input name="Contrasenya" type="password" id="pass" size="15" maxlength="20" />
-          </div>
-          <input type="submit" value="Iniciar sessió" />
-        </form>
-      </div>
-
-      <div id="HedPrinc">
-        <div id="Logo">
-          <a href="IsmaelMarcos.html">
-            <img src="Images/Header/Logo.png" id="LogoIMG" alt="Logo">
-          </a>
-        </div>
-        <div id="Centro">
-          <div id="Titulo">
-            <h1> Intel·ligència Artificial </h1>
-          </div>
-          <div id="Mensaje">
-            <h3> Bon dia, internauta, et trobes a la pàgina principal. </h3>
-          </div>
-        </div>
-        <div id="Empty"></div>
-      </div>
-
-      <div id="HaciaAbajo">
-        <img src="Images/Header/FlechaAbajo.png" alt="Vés cap a baix" id="FlechaAbajo">
-      </div>
+      <img src="Images/Header/FlechaAbajo.png" alt="Vés cap a baix" id="FlechaAbajo">
     </header>
 
     <section id="Principal">
@@ -197,6 +150,7 @@
         <img src="Images/Footer/Twitter.png" class="Footerimg" alt="Twitter">
       </div>
     </footer>
+
     <script>
       function MostrarPaginas() {
         document.getElementById("Lista").style.display = "flex";
