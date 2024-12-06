@@ -40,11 +40,10 @@
     </nav>
 
     <header>
-      <img src="Images/Header/Logo.png" id="LogoIMG" alt="Logo">
       <h1>Intel·ligència Artificial</h1>
-      <h3>Bon dia, internauta, et trobes a la pàgina principal.</h3>
+      <h3>Et trobes a la pàgina principal.</h3>
 
-      <img src="Images/Header/FlechaAbajo.png" alt="Vés cap a baix" id="FlechaAbajo">
+      <div role="separator"></div>
     </header>
 
     <section id="Principal">
@@ -151,65 +150,5 @@
       </div>
     </footer>
 
-    <script>
-      function MostrarPaginas() {
-        document.getElementById("Lista").style.display = "flex";
-        document.getElementById("Apartado2").style.display = "none";
-        document.getElementById("ApartadoHome").style.display = "none";
-        document.getElementById("ApartadoTipos").style.display = "none";
-        document.getElementById("ApartadoEnquesta").style.display = "none";
-      }
-
-      function MostrarApartadoHome() {
-        document.getElementById("Lista").style.display = "none";
-        document.getElementById("ApartadoHome").style.display = "flex";
-      }
-
-      function MostrarApartado2() {
-        document.getElementById("Lista").style.display = "none";
-        document.getElementById("SubApartado21").style.display = "none";
-        document.getElementById("SubApartado22").style.display = "none";
-        document.getElementById("Apartado2").style.display = "flex";
-      }
-
-      function MostrarSubApartado21() {
-        document.getElementById("SubApartado21").style.display = "flex";
-        document.getElementById("Apartado2").style.display = "none";
-      }
-
-      function MostrarSubApartado22() {
-        document.getElementById("SubApartado22").style.display = "flex";
-        document.getElementById("Apartado2").style.display = "none";
-      }
-
-      function MostrarTipos() {
-        document.getElementById("Lista").style.display = "none";
-        document.getElementById("ApartadoTipos").style.display = "flex";
-        document.getElementById("SubApartado31").style.display = "none";
-        document.getElementById("SubApartado32").style.display = "none";
-      }
-
-      function MostrarEnquesta() {
-        document.getElementById("Lista").style.display = "none";
-        document.getElementById("ApartadoEnquesta").style.display = "flex";
-      }
-
-      function MostrarInicioSesion() {
-        document.getElementById("Inicio").style.display = "flex"
-      }
-
-      function OcultarInicioSesion() {
-        document.getElementById("Inicio").style.display = "none"
-      }
-      document.getElementById("Home1").addEventListener("click", () => {
-        document.getElementById("A1").scrollIntoView();
-      })
-      document.getElementById("Home2").addEventListener("click", () => {
-        document.getElementById("A2").scrollIntoView();
-      })
-      document.getElementById("Home3").addEventListener("click", () => {
-        document.getElementById("A3").scrollIntoView();
-      })
-    </script>
   </body>
 </html>

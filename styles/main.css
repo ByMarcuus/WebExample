@@ -16,13 +16,16 @@ font-style: normal;
 }
 
 @font-face {
-font-family: 'Neon Led Light';
+font-family: 'NeonLED';
 src: url('../assets/fonts/NeonLED.otf') format("truetype");
 font-weight: normal;
 font-style: normal;
 }
 
 nav {
+    position: fixed;
+    top: 0;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -32,6 +35,7 @@ nav {
     background-color: black;
 
     width: 100%;
+    z-index: 2;
 }
 
     nav a {
@@ -72,36 +76,71 @@ nav {
         nav > ul > li::marker {
             content: '';
         }
+        /* TODO: Animations */
+        nav button {
+            mask-image: url("../assets/svgs/right.svg");
+            mask-repeat: no-repeat;
+            mask-size: contain;
+            mask-position: center;
 
-    nav button {
-        mask-image: url("../assets/svgs/right.svg");
-        mask-repeat: no-repeat;
-        mask-size: contain;
-        mask-position: center;
+            border: none;
+            outline: none;
+            background-color: white;
 
-        border: none;
-        outline: none;
-        background-color: white;
+            width: 25px;
+            aspect-ratio: 1/1;
+        }
 
-        width: 25px;
-        aspect-ratio: 1/1;
+header {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+}
+
+    header h1 {
+        font-family: 'Ailerons';
+        font-size: 120px;
+        font-weight: bold;
+        font-optical-sizing: auto;
+
+        text-align: center;
+        text-transform: uppercase;
+
+        letter-spacing: -15px;
     }
 
-.Paginas ul > * {
-display: none;
-}
+    header h3 {
+        font-family: 'Ailerons';
+        font-size: 50px;
+        font-weight: lighter;
+        font-optical-sizing: auto;
 
-.Apartados {
-display: none;
-flex-direction: row;
-justify-content: space-around;
-align-items: center;
-list-style: none;
-font-family: 'Ailerons';
-color: rgb(255, 255, 255);
-font-size: 25px;
-width: 100%;
-}
+        text-align: center;
+        text-transform: uppercase;
+
+        word-spacing: -10px;
+        letter-spacing: -5px;
+    }
+
+    header > div {
+        position: absolute;
+        bottom: 0;
+
+        background-color: black;
+
+        width: 100%;
+        height: 50px;
+    }
+
+    header > div::before {
+        content: ' ';
+    }
 
 #Lista{
 display: flex;
@@ -176,27 +215,6 @@ text-align: center;
 
 #Centro > * {
 padding: 5px;
-}
-
-#HaciaAbajo {
-background-color: rgba(0, 0, 0, .8);
-padding: 1vw 0px;
-display: flex;
-justify-content: center;
-align-items: center;
-overflow: hidden;
-color: white;
-}
-
-#FlechaAbajo{
-width: 50px;
-height: 50px;
-z-index: 1;
-position: relative;
-animation-name: flecha;
-animation-duration: 2s;
-animation-timing-function: linear;
-animation-iteration-count: infinite;
 }
 
 #Pie {
