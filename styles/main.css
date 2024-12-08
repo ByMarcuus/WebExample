@@ -1,25 +1,26 @@
 * {
-box-sizing: border-box;
-padding: 0px;
-margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
 }
 
 html {
-scroll-behavior: smooth;
+    font-family: 'Ailerons';
+    scroll-behavior: smooth;
 }
 
 @font-face {
-font-family: 'Ailerons';
-src: url('../assets/fonts/Ailerons.otf') format("truetype");
-font-weight: normal;
-font-style: normal;
+    font-family: 'Ailerons';
+    src: url('../assets/fonts/Ailerons.otf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-font-family: 'NeonLED';
-src: url('../assets/fonts/NeonLED.otf') format("truetype");
-font-weight: normal;
-font-style: normal;
+    font-family: 'NeonLED';
+    src: url('../assets/fonts/NeonLED.otf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 nav {
@@ -39,7 +40,6 @@ nav {
 }
 
     nav a {
-        font-family: 'Ailerons';
         font-size: 30px;
         font-weight: 500;
         font-optical-sizing: auto;
@@ -104,7 +104,6 @@ header {
 }
 
     header h1 {
-        font-family: 'Ailerons';
         font-size: 120px;
         font-weight: bold;
         font-optical-sizing: auto;
@@ -116,7 +115,6 @@ header {
     }
 
     header h3 {
-        font-family: 'Ailerons';
         font-size: 50px;
         font-weight: lighter;
         font-optical-sizing: auto;
@@ -132,6 +130,10 @@ header {
         position: absolute;
         bottom: 0;
 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         background-color: black;
 
         width: 100%;
@@ -139,7 +141,51 @@ header {
     }
 
     header > div::before {
-        content: ' ';
+        content: '>';
+
+        font-size: 50px;
+
+        rotate: 90deg;
+
+        color: white;
+    }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    font-optical-sizing: auto;
+    text-transform: uppercase;
+
+    padding: 20px;
+    background-color: black;
+
+    width: 100%;
+    color: white;
+}
+
+    footer p {
+        font-size: 28px;
+        letter-spacing: -5px;
+    }
+
+    footer span {
+        font-size: 20px;
+        letter-spacing: -2.5px;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer ul li::marker {
+        content: '';
+    }
+
+    li[role="separator"] {
+        background-color: red;
     }
 
 #Lista{
@@ -152,20 +198,6 @@ font-family: 'Ailerons';
 color: rgb(255, 255, 255);
 font-size: 25px;
 width: 100%;
-}
-
-.Paginas {
-vertical-align: center;
-}
-
-.Button{
-width: 20px;
-height: 20px;
-}
-
-.Atras {
-width: 20px;
-height: 20px;
 }
 
 #Session{
@@ -199,38 +231,10 @@ line-height : 30px;
 top: 90px;
 }
 
-#LogoIMG {
-width: 140px;
-transition: all 0.3s ease-in;
-filter: drop-shadow(2px 2px 0 rgb(175, 175, 175))
-}
-
-#LogoIMG:hover {
-filter: drop-shadow(13px 10px 1px rgb(75, 75, 75)) invert(90%);
-}
-
 #Centro {
 text-align: center;
 }
 
 #Centro > * {
 padding: 5px;
-}
-
-#Pie {
-display: flex;
-flex-direction: column;
-text-align: right;
-font-family: 'Ailerons';
-text-transform: uppercase;
-font-size: 1vw;
-background-color: rgb(0, 0, 0);
-color: white;
-width: 100%;
-padding: 20px;
-}
-
-.Footerimg{
-height: 40px;
-width: 40px;
 }
